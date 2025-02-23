@@ -1,0 +1,1012 @@
+{ 
+    "data":
+    [
+        {
+            "chapter": "Số phức",
+            "topics":
+            [
+                {
+                    "topic": "Cộng trừ số phức",
+                    "general guide": "Cho hai số phức $z_1 = a + bi$ và $z_2 = c + di$ thì. Phép cộng số phức: $z_1 + z_2 = (a + c) + (b + d)i$. Phép trừ số phức: $z_1 – z_2 = ( a- c) + ( b – d) i$",
+                    "questions": [
+                        {
+                            "question": "Cho hai số phức $z_1 = 1 + 10i$ và $z_2 = 9 – 2i$. Số phức $z = z_1 + z_2$ có z1 có phần thực là:",
+                            "solution": "Ta có: $z = z_1 + z_2 = (1 + 10i) + ( 9 – 2i) = 10 + 8i$. Do đó, phần thực của số phức z là 10.",
+                            "answer": "10"
+                        },
+                        {
+                            "question": "Hãy tính số phức z. Biết rằng: $z = 10i – ( 2 + 2i).i$",
+                            "solution": "Ta có: $z = 10i - (2 + 2i).i = 10i – 2i + 2 = 2 + 8i$",
+                            "answer": "2 + 8i"
+                        },
+                        {
+                            "question": "Cho hai số phức $z = -2 + 3yi$; $z’ = ( x + 1)- 4i$ với $x,y ∈ R$. Tìm x; y để $z + i= z’ + 2$",
+                            "solution": "Để $z + i = z’ + 2$ => - 2 + 3yi + i = ( x + 1) – 4i + 2 => - 2 + (3y + 1).i = ( x + 3)- 4i. Do đó ta có hệ phương trình : -2 = x+3 , 3y + 1 = -4 => x = -5, y=-5/3",
+                            "answer": "x = -5, y = -5/3"
+                        },
+                        {
+                            "question": "Số nào trong các số phức sau là số thuần ảo? A. (√2 + i) - (1 + √2i); B. ( 8 + 2i) + (- 8 + 2i); C. ( - 3 + i) – ( 3 - i); D. (10 + 3i) – ( -10 – 3i)",
+                            "solution": "Ta xét các phương án:A.(√2 + i) - (1 + √2i)= (√2 - 1) - (1 - √2) không là số thuần ảo; B.(8 + 2i) + (- 8 + 2i) = 4i là số thuần ảo; C.(-3 + i) – (3- i) = - 3 + i – 3 + i= - 6 + 2i không là số thuần ảo.; D.(10 + 3i) – ( -10 – 3i) = 10 + 3i + 10 + 3i = 20 + 6i không là số thuần ảo.",
+                            "answer": "B. ( 8 + 2i) + (- 8 + 2i)"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Nhân chia số phức",
+                    "general guide":"Phép nhân số phức: $z_1 \\cdot z_2 = (ac - bd) + (ad + bc)i$. Phép chia số phức: Số phức nghịch đảo của $z = a + bi \neq 0$ là $\frac{1}{z} = \frac{\\overline{z}}{|z|^2} = \frac{1}{a^2 + b^2} \\overline{z}$. Thực hiện phép chia $\frac{c+di}{a+bi}$ là nhân cả tử và mẫu với số phức liên hợp của $a + bi$: $\frac{c+di}{a+bi} = \frac{(c+di)(a-bi)}{a^2 - b^2i^2} = \frac{ac+bd}{a^2+b^2} + \frac{ad-bc}{a^2+b^2} i$",
+                    "questions": 
+                    [
+                        {
+                            "question":"Tính giá trị của P = i^{105} + i^{23} + i^{20} - i^{34}",
+                            "solution":"Ta có: $i^2 = -1 \\Rightarrow i^4 = 1$. Do đó, $P = i^{105} + i^{23} + i^{20} - i^{34} = i^{104+1} + i^{20+3} + i^{4 \\cdot 5} - i^{4 \\cdot 8 + 2} = i \\cdot i^{4 \\cdot 26} + i^2 \\cdot i \\cdot i^{4 \\cdot 5} + 1 - i^2 \\cdot i^{4 \\cdot 8} = i \\cdot 1 + (-1) \\cdot i \\cdot 1 + 1 - (-1) \\cdot 1 = 2$",
+                            "answer":"2"
+                        },
+                        {
+                            "question":"Giá trị của biểu thức $A = \\left( \\frac{1+i}{1-i} \\right)^{2016} + \\left( \\frac{1-i}{1+i} \\right)^{2018}$ bằng ?",
+                            "solution":"Ta có: $\\frac{1+i}{1-i} = \\frac{(1+i)^2}{(1-i).(1+i)} = \\frac{1+2i+i^2}{1-i^2} = \\frac{2i}{2} = i$; $\\frac{1-i}{1+i} = \\frac{(1-i)^2}{(1+i).(1-i)} = \\frac{1-2i+i^2}{1-i^2} = \\frac{-2i}{2} = -i$; Suy ra: $A = \\left( \\frac{1+i}{1-i} \\right)^{2016} + \\left( \\frac{1-i}{1+i} \\right)^{2018} = i^{2016} + (-i)^{2018} = (i^2)^{1008} + (i^2)^{1009} = (-1)^{1008} + (-1)^{1009} = 1 - 1 = 0$",
+                            "answer":"0"
+                        },
+                        {
+                            "question":"Cho $P = 1 + i + i^2 + i^3 + ... + i^{2017}$. Tính P?",
+                            "solution":"Ta có: $P = 1 + i + i^2 + i^3 + ... + i^{2017}$ $iP = i + i^2 + i^3 + ... + i^{2018}$ $\\Rightarrow P - iP = 1 - i^{2018}$ $\\Rightarrow P = \\frac{1 - i^{2018}}{1 - i} = \\frac{1 - (i^2)^{1009}}{1-i} = \\frac{2}{1-i} = \\frac{2(1+i)}{(1-i).(1+i)} = \\frac{2(1+i)}{2} = 1 + i$",
+                            "answer":"1 + i"
+                        },
+                        {
+                            "question": "Cho $A = 1 + i^2 + i^4 + .. + i^{4k-2} + i^{4k}$ với k là số nguyên dương. Tính A?",
+                            "solution": "Do A là tổng của một cấp số nhân (gồm 2k + 1 số hạng) với số hạng đầu $u_1 = 1$, công bội q = $i^2$. Suy ra $A = 1 + i^2 + i^4 + .. + i^{4k-2} + i^{4k} = \\frac{1 - (i^2)^{2k+1}}{1 - i^2} = \\frac{1 - (-1)^{2k+1}}{1 - (-1)} = \\frac{1 - (-1)^{2k} \\cdot (-1)^1}{2} = 1$",
+                            "answer": "1"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Số phức liên hợp",
+                    "general guide":"Cho số phức $z = a + bi$, $(a, b \\in \\mathbb{R})$. Khi đó, số phức liên hợp với số phức $z$ là: $\\overline{z} = a - bi$",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tìm số phức liên hợp của số phức $z = (3 - 2i).(2 + 3i)$",
+                            "solution": "Ta có: $z = (3 - 2i).(2 + 3i) = 6 + 9i - 4i + 6 = 12 + 5i$ \\Rightarrow Số phức liên hợp với số phức z là $\\overline{z} = 12 - 5i$",
+                            "answer": "$12 - 5i$"
+                        },
+                        {
+                            "question": "Cho số phức $z = 5 - 3i$. Tính $1 + \\overline{z} + (\\overline{z})^2$ ta được kết quả:",
+                            "solution": "Ta có $z = 5 - 3i \\Rightarrow \\overline{z} = 5 + 3i$ Suy ra : $1 + \\overline{z} + (\\overline{z})^2 = 1 + (5 + 3i) + (5 + 3i)^2 = (6 + 3i) + (25 + 30i - 9) = 22 + 33i$",
+                            "answer": "22 + 33i"
+                        },
+                        {
+                            "question": "Cho số phức z thỏa $(1 + 3i)z - (2 + 5i) = (2 + i)z$. Tìm số phức liên hợp của số phức z.",
+                            "solution": "Theo giả thiết ta có: $(1 + 3i)z - (2 + 5i) = (2 + i)z \\Rightarrow (1 + 3i - 2 - i)z = 2 + 5i \\Leftrightarrow (-1 + 2i)z = 2 + 5i \\Rightarrow z = \\frac{2 + 5i}{-1 + 2i} = \\frac{8}{5} + \\frac{9}{5}i$",
+                            "answer": "$\\frac{8}{5} + \\frac{9}{5}i$"
+                        },
+                        {
+                            "question": "Tìm số phức z, biết $z + 2i\\overline{z} + 4 = i$",
+                            "solution": "Gọi số phức z cần tìm là $z = a + bi$ ($a, b \\in R$). Số phức liên hợp với số phức z là: $\\overline{z} = a - bi$. Theo giả thiết: $z + 2i\\overline{z} + 4 = i \\Rightarrow a + bi + 2i(a - bi) + 4 = i \\Rightarrow a + bi + 2ai + 2b + 4 - i = 0 \\Rightarrow (a + 2b + 4) + (b + 2a - 1)i = 0 \\Rightarrow \\begin{cases} a + 2b = -4 \\\\ b + 2a = 1 \\end{cases} \\Rightarrow \\begin{cases} a = 2 \\\\ b = -3 \\end{cases}$ Suy ra $z = 2 - 3i$",
+                            "answer": "2 - 3i"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Mô đun của số phức",
+                    "general guide":"* Cho số phức $z = a + bi$, ( $a,b \\in \\mathbb{R}$). Khi đó mô đun của số phức $z$ kí hiệu là : $|z|$ và : $|z| = \\sqrt{a^2 + b^2}$ * Nhận xét : $|z| \\geq 0$ và $|z| = 0 \\Leftrightarrow z = 0$.",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tìm số phức z, biết $|z| = \\sqrt{5}$, phần thực bằng 2 lần phần ảo và phần thực dương",
+                            "solution": "Cho số phức $z = a + bi$, ($a, b \\in R$) và $a > 0$. Do phần thực bằng 2 lần phần ảo nên: $a = 2b$ (1). mà $|z| = \\sqrt{5} \\Leftrightarrow \\sqrt{a^2 + b^2} = \\sqrt{5} \\Rightarrow a^2 + b^2 = 5$ (2). Từ (1) và (2) ta có hệ phương trình: $\\begin{cases} a = 2b \\\\ a^2 + b^2 = 5 \\end{cases} \\Leftrightarrow \\begin{cases} a = 2 \\\\ b = 1 \\end{cases}$ Vậy số phức cần tìm là $z = 2 + i$.",
+                            "answer": "2 + i"
+                        },
+                        {
+                            "question": "Cho số phức z có phần thực là số nguyên và z thỏa mãn: $|z| - 2\\overline{z} = -7 + 3i + z$. Tính môđun của số phức: $\\omega = 1 - z + z^2$",
+                            "solution": "Gọi số phức cần tìm là $z = a + bi$, ($a, b \\in R$). Số phức liên hợp của số phức z là: $\\overline{z} = a - bi$ và $|z| = \\sqrt{a^2 + b^2}$. Theo giả thiết ta có: $|z| - 2\\overline{z} = -7 + 3i + z \\Leftrightarrow \\sqrt{a^2 + b^2} - 2(a - bi) = -7 + 3i + a + bi \\Leftrightarrow \\begin{cases} \\sqrt{a^2 + b^2} - 2a = -7 + a \\\\ 2b = 3 + b \\end{cases} \\Leftrightarrow \\begin{cases} 8a^2 - 42a + 40 = 0 \\\\ b = 3 \\end{cases} \\Leftrightarrow \\begin{cases} a \\geq \\frac{7}{3} \\\\ b = 3 \\end{cases} \\Leftrightarrow \\begin{cases} a = 4 \\\\ b = 3 \\end{cases}$. vậy $z = 4 + 3i \\Rightarrow \\omega = 1 - (4 + 3i) + (4 + 3i)^2 = 4 + 21i \\Rightarrow |\\omega| = \\sqrt{4^2 + 21^2} = \\sqrt{457}$",
+                            "answer": "$\\sqrt{457}$"
+                        },
+                        {
+                            "question": "Cho hai số phức $z_1$ và $z_2$ thỏa mãn $|z_1| = |z_2| = 1$; $|z_1 + z_2| = \\sqrt{3}$. Tính $|z_1 - z_2|$",
+                            "solution": "Ta có: $3 = |z_1 + z_2|^2 = (z_1 + z_2)(\\overline{z_1} + \\overline{z_2}) \\Rightarrow z_1 \\overline{z_2} + z_2 \\overline{z_1} + z_1 \\overline{z_1} + z_2 \\overline{z_2} = 3 \\Rightarrow z_1 \\overline{z_2} + z_2 \\overline{z_1} = 1$ Vì $|z_1| = |z_2| = 1$ nên $z_1 \\cdot \\overline{z_1} = 1$; $z_2 \\cdot \\overline{z_2} = 1$. Khi đó: $|z_1 - z_2|^2 = (z_1 - z_2)(\\overline{z_1} - \\overline{z_2}) = |z_1|^2 + |z_2|^2 - (z_1 \\overline{z_2} + z_2 \\overline{z_1}) = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": "Cho số phức z thỏa mãn $|z + 3| = 5$ và $|z - 2i| = |z - 2 - 2i|$. Tính $|z|$.",
+                            "solution": "Gọi số phức z cần tìm là $z = a + bi$ ($a, b \\in R$). Ta có: $|z + 3| = 5 \\Leftrightarrow |a + bi + 3| = 5 \\Leftrightarrow (a + 3)^2 + b^2 = 25$ (*). $|z - 2i| = |z - 2 - 2i| \\Leftrightarrow |a + bi - 2i| = |a + bi - 2 - 2i| \\Leftrightarrow a^2 + (b - 2)^2 = (a - 2)^2 + (b - 2)^2 \\Leftrightarrow a^2 = (a - 2)^2 \\Leftrightarrow \\begin{cases} a - 2 = a \\\\ a - 2 = -a \\end{cases}$. Thế a = 1 vào (*) ta được $16 + b^2 = 25 \\Rightarrow b^2 = 9$. Do đó, môđun của z là: $|z| = \\sqrt{1^2 + 9} = \\sqrt{10}$",
+                            "answer": "$\\sqrt{10}$"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tìm số phức thỏa mãn điều kiện T",
+                    "general guide":"Để tìm được số phức thỏa mãn điều kiện T, ta cần linh hoạt các phép toán của số phức, tính môdun số phức, số phức liên hợp...",
+                    "questions":
+                    [
+                        {
+                            "question": "Cho số phức $z = 2m + (m + 2)i, (m \\in R)$. Tìm z biết rằng $z^2$ là một số phức có phần thực bằng -5.",
+                            "solution": "Ta có: $z^2 = 4m^2 + 2m(m + 2)i + [(m + 2)i]^2 = 3m^2 + 2m(m + 2)i - 4m - 4$. Do $z^2$ là số phức có phần thực bằng -5 nên ta có: $3m^2 - 4m - 4 = -5 \\Leftrightarrow 3m^2 - 4m + 1 = 0 \\Leftrightarrow m = 1; m = \\frac{1}{3}$. Vậy có hai số phức thỏa mãn là $z_1 = 2 + 3i$ và $z_2 = \\frac{2}{3} + \\frac{7}{3}i$.",
+                            "answer": "$z = 2 + 3i, z = \\frac{2}{3} + \\frac{7}{3}i$"
+                        },
+                        {
+                            "question": "Cho số phức $z = m + (m-1)i$; ($m \\in R$) và số phức $z' = 2n + (2-3n)i$ ($n\\in R$). Tìm m và n biết rằng $z - z' = 1 + 7i$",
+                            "solution": "Ta có: $z - z' = [m + (m - 1).i] - [2n + (2 - 3n).i] = (m - 2n) + (m + 3n - 3). i$. Theo giả thiết $z - z' = 1 + 7i$ nên ta có: $(m - 2n) + (m + 3n - 3).i = 1 + 7i$. Từ đó ta có hệ phương trình sau: $\\begin{cases} m - 2n = 1 \\\\ m + 3n - 3 = 7 \\end{cases} \\Leftrightarrow \\begin{cases} m - 2n = 1 \\\\ m + 3n = 10 \\end{cases} \\Leftrightarrow \\begin{cases} m = \\frac{23}{5} \\\\ n = \\frac{9}{5} \\end{cases}$",
+                            "answer": "$m = \\frac{23}{5}; n = \\frac{9}{5}$"
+                        },
+                        {
+                            "question": "Tìm số phức $z = x + yi, (x, y \\in R)$ thỏa mãn $z + 3x = 2\\overline{z} - 3i$. Tìm $|z|$",
+                            "solution": "Vì $z + 3x = 2\\overline{z} - 3i \\Leftrightarrow x + yi + 3x = 2(x - yi) - 3i \\Leftrightarrow 4x + yi = 2x - (2y + 3)i \\Leftrightarrow \\begin{cases} 4x = 2x \\\\ y = -2y - 3 \\end{cases} \\Leftrightarrow \\begin{cases} x = 0 \\\\ y = -1 \\end{cases}$. Do đó, số phức thỏa mãn đầu $z = -i$ và $|z| = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": "Có bao nhiêu số phức z có phần ảo gấp ba lần phần thực, đồng thời $|z| = \\sqrt{10}(z + \\overline{z})$",
+                            "solution": "Gọi số phức cần tìm là $z = a + bi$, ($a, b \\in R$). Do số phức z có phần ảo gấp ba lần phần thực nên b = 3a. $\\Rightarrow$ Số phức cần tìm có dạng: $z = a + 3ai$. Số phức liên hợp của số phức z là: $\\overline{z} = a - 3ai$. Theo giả thiết ta có: $|z| = \\sqrt{10}(z + \\overline{z}) \\Leftrightarrow \\sqrt{a^2 + 9a^2} = \\sqrt{10}(a + 3ai + a - 3ai) \\Leftrightarrow \\sqrt{10a^2} = \\sqrt{20}a \\Leftrightarrow 10a^2 = 20a \\Leftrightarrow \\begin{cases} a = 0 \\\\ a = 2 \\end{cases}$. Với a = 0 thì z = 0. Với a = 2 thì z = 2 + 6i. Vậy có hai số phức thỏa mãn là z = 0 hoặc z = 2 + 6i.",
+                            "answer": "2"
+                        },
+                        {
+                            "question": "Trong mặt phẳng Oxy cho điểm A là điểm biểu diễn của số phức $z = 1 + 2i$, B là điểm thuộc đường thẳng y=2 sao cho tam giác OAB cân tại O. Tìm số z biểu diễn B.",
+                            "solution": "Ta có, điểm A biểu diễn số phức $z = 1 + 2i$ nên tọa độ A(1 ; 2). Do điểm B nằm trên đường thẳng y=2 nên tọa độ B(x ; 2) ; (x $\\neq$ 1 ). Để tam giác OAB cân tại O khi và chỉ khi OA = OB. $\\Leftrightarrow \\sqrt{1^2 + 2^2} = \\sqrt{x^2 + 2^2} \\Leftrightarrow x^2 + 4 = 5 \\Leftrightarrow \\begin{cases} x = 1 (l) \\\\ x = -1 \\end{cases}$. Suy ra, tọa độ B (-1 ; 2). Do đó,số phức biểu diễn B là $z = -1 + 2i$.",
+                            "answer": "-1 + 2i"
+                        }
+                    ]
+                },
+                {
+                    "topic":" Giải phương trình bậc nhất trên tập số phức",
+                    "general guide":"* Cho số phức $z = a + bi$, ( $a,b \\in \\mathbb{R}$). Khi đó mô đun của số phức $z$ kí hiệu là : $|z|$ và : $|z| = \\sqrt{a^2 + b^2}$ * Nhận xét : $|z| \\geq 0$ và $|z| = 0 \\Leftrightarrow z = 0$.",
+                    "questions":
+                    [
+                        {
+                            "question": "Cho số phức z thỏa mãn: $(2 + i)z + 2 - i = 0$. Tìm phần thực của số phức.",
+                            "solution": "Ta có: $(2 + i).z + 2 - i = 0 \\Leftrightarrow (2 + i)z = -2 + i \\Leftrightarrow z = \\frac{-2 + i}{2 + i} = \\frac{(-2 + i)(2 - i)}{(2 + i).(2 - i)} \\Leftrightarrow z = \\frac{-4 + 2i + 2i - i^2}{4 - i^2} = \\frac{-3 + 4i}{5}$. Do đó, phần thực của số phức cần tìm là $\\frac{-3}{5}$",
+                            "answer": "$\\frac{-3}{5}$"
+                        },
+                        {
+                            "question": "Giải phương trình $iz + 3 - 2i = 1 + i$",
+                            "solution": "Ta có: $iz + 3 - 2i = 1 + i \\Leftrightarrow iz = 1 + i - 3 + 2i \\Leftrightarrow iz = -2 + 3i \\Leftrightarrow z = \\frac{-2 + 3i}{i} = \\frac{2i - 3i^2}{-i^2} = 3 + 2i$",
+                            "answer": "3 + 2i"
+                        },
+                        {
+                            "question": "Giải phương trình: $(2 + 4i)z + (4 - 2i)z + 2 - 2i = 0$",
+                            "solution": "Ta có: $(2 + 4i).z + (4 - 2i)z + 2 - 2i = 0 \\Leftrightarrow (2 + 4i + 4 - 2i)z = - 2 + 2i \\Leftrightarrow (6 + 2i). z = - 2 + 2i \\Leftrightarrow z = \\frac{-2 + 2i}{6 + 2i} = \\frac{-1 + i}{3 + i} \\Leftrightarrow z = \\frac{(-1 + i).(3 - i)}{(3 + i)(3 - i)} \\Leftrightarrow z = \\frac{-3 + i + 3i - i^2}{9 - i^2} = \\frac{-2 + 4i}{10} = \\frac{-1 + 2i}{5}$",
+                            "answer": "$\\frac{-1 + 2i}{5}$"
+                        },
+                        {
+                            "question": "Giải phương trình $(1 + 2i)z + \\frac{2 + 6i}{1 - i} = 0$",
+                            "solution": "Ta có: $(1 + 2i)z + \\frac{2 + 6i}{1 - i} = 0 \\Leftrightarrow (1 + 2i)z = \\frac{-2 - 6i}{1 - i} \\Leftrightarrow (1 + 2i)z = \\frac{(-2 - 6i).(1 + i)}{(1 - i)(1 + i)} \\Leftrightarrow (1 + 2i)z = \\frac{-2 - 2i - 6i - 6i^2}{2} \\Leftrightarrow (1 + 2i)z = \\frac{4 - 8i}{2} \\Leftrightarrow (1 + 2i)z = -2 + 4i \\Leftrightarrow z = \\frac{-2 + 4i}{1 + 2i} = \\frac{(-2 + 4i)(1 - 2i)}{(1 + 2i)(1 - 2i)} \\Leftrightarrow z = \\frac{-2 + 4i + 4i - 8i^2}{1 - 4i^2} \\Leftrightarrow z = \\frac{6 + 8i}{5}$",
+                            "answer": "$\\frac{6 + 8i}{5}$"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Giải phương trình bậc 2 số phức",
+                    "general guide":"",
+                    "questions":
+                    [
+                        {
+                            "question": "Giải phương trình bậc hai sau: $z^2 - z + 1 = 0$",
+                            "solution": "Ta có: a = 1 ; b = -1 ; c = 1 nên $\\Delta = b^2 - 4ac = -3 < 0$. Phương trình có hai nghiệm phức phân biệt là $x_{1,2} = \\frac{1 \\pm i\\sqrt{3}}{2}$",
+                            "answer": "$\\frac{1 \\pm i\\sqrt{3}}{2}$"
+                        },
+                        {
+                            "question": "Trong C , nghiệm của phương trình $z^2 + \\sqrt{5} = 0$ là:",
+                            "solution": "$z^2 + \\sqrt{5} = 0 \\Leftrightarrow z^2 = -\\sqrt{5} \\Leftrightarrow z^2 = i^2\\sqrt{5} \\Leftrightarrow z = \\pm i^4\\sqrt{5}$",
+                            "answer": "$\\pm i^4\\sqrt{5}$"
+                        },
+                        {
+                            "question": "Trong C , nghiệm của phương trình $z^3 - 8 = 0$ là:",
+                            "solution": "Sử dụng hằng đẳng thức số 7, ta có: $z^3 - 8 = 0 \\Leftrightarrow (z - 2)(z^2 + 2z + 4) = 0 \\Leftrightarrow \\begin{bmatrix} z = 2 \\\\ z^2 + 2z + 4 = 0 \\end{bmatrix} \\Leftrightarrow \\begin{bmatrix} z = 2 \\\\ (z + 1)^2 = -3 \\end{bmatrix} \\Leftrightarrow \\begin{bmatrix} z = 2 \\\\ z + 1 = \\sqrt{3}i \\\\ z + 1 = -\\sqrt{3}i \\end{bmatrix} \\Leftrightarrow \\begin{bmatrix} z = 2 \\\\ z = -1 + \\sqrt{3}i \\\\ z = -1 - \\sqrt{3}i \\end{bmatrix}$. Vậy phương trình đã cho có 3 nghiệm phân biệt.",
+                            "answer": "$\\begin{bmatrix} z = 2 \\\\ z = -1 + \\sqrt{3}i \\\\ z = -1 - \\sqrt{3}i \\end{bmatrix}$"
+                        },
+                        {
+                            "question": "Trong C , phương trình $z^2 + 3iz + 4 = 0$ có nghiệm là:",
+                            "solution": "Ta có : a = 1 ; b = i ; c = 4 nên : $\\Delta = b^2 - 4ac = (3i)^2 - 4.1.4 = -25 < 0$. Phương trình có hai nghiệm phức là: $z_1 = \\frac{-3i + 5i}{2} = i$ và $z_2 = \\frac{-3i - 5i}{2} = -4i$",
+                            "answer": "$\\begin{bmatrix} z = i \\\\ z = -4i \\end{bmatrix}$"
+                        },
+                        {
+                            "question": "Cho z = 1 - i. Tìm căn bậc hai dạng lượng giác của z:",
+                            "solution": "Ta có $z = 1 - i = \\sqrt{2} \\begin{bmatrix} cos(-\\frac{\\pi}{4}) + i sin(-\\frac{\\pi}{4}) \\end{bmatrix}$ có các căn bậc hai là: $w_1 = ^4\\sqrt{2}(cos(\\frac{7\\pi}{8}) + i sin(\\frac{7\\pi}{8})) ; w_2 = ^4\\sqrt{2}(cos(-\\frac{\\pi}{8}) + i sin(-\\frac{-\\pi}{8}))$",
+                            "answer": "$^4\\sqrt{2}(cos(\\frac{7\\pi}{8}) + i sin(\\frac{7\\pi}{8})) ; ^4\\sqrt{2}(cos(-\\frac{\\pi}{8}) + i sin(-\\frac{-\\pi}{8}))$"
+                        }
+                    ]
+                }
+                ,
+                {
+                    "topic":"Tìm căn bậc hai của số phức",
+                    "general guide":"Trường hợp $w$ là số thực: Nếu $+a < 0$; $a$ có các căn bậc hai là $\\pm i\\sqrt{|a|}$. $+ a = 0$, $a$ có đúng một căn bậc hai là $0$. $+a > 0$, a có hai căn bậc hai là $\\pm\\sqrt{a}$. Trường hợp $w = a + bi$; $a, b \\in \\mathbb{R}$; $b \\neq 0$ Gọi $z = x + yi$ là một căn bậc hai của $w$ khi và chỉ khi $z^2 = w$, tức là $(x + yi)^2 = a + bi \\Leftrightarrow x^2 - y^2 + 2xyi = a + bi \\Leftrightarrow \\begin{cases} x^2 - y^2 = a \\\\ 2xy = b \\end{cases}$ Mỗi cặp số thực $(x; y)$ nghiệm đúng hệ phương trình trên cho ta một căn bậc hai $x + y.i$ của số phức $w = a + bi$.",
+                    "questions":
+                    [
+                        {
+                            "question": "Tìm các căn bậc hai của $w = -5 + 12i$.",
+                            "solution": "Gọi $z = x + yi$ là một căn bậc hai của số phức $w = -5 + 12i$. Ta có $z^2 = w <=>$ $(x + yi)^2 = -5 + 12i$ $<=> \\begin{cases} x^2 - y^2 = -5 \\\\ 2xy = 12 \\end{cases} <=> \\begin{cases} x^2 = 4 \\\\ y = \\frac{6}{x} \\end{cases} <=> \\begin{cases} x = 2 \\\\ y = 3 \\end{cases} \\\\  \\begin{cases} x = -2 \\\\ y = -3 \\end{cases}$ Vậy số phức w có hai căn bậc hai là $2 + 3i$ và $-2 - 3i$.",
+                            "answer": "$2 + 3i$ và $-2 - 3i$"
+                        },
+                        {
+                            "question": "Khai căn bậc hai số phức $z = -3 + 4i$ có kết quả:",
+                            "solution": "Giả sử $w = x + yi$ là một căn bậc hai của số phức $z = -3 + 4i$. Ta có: $w^2 = z <=> (x + yi)^2 = -3 + 4i$ $<=> \\begin{cases} x^2 - y^2 = -3 \\\\ 2xy = 4 \\end{cases} <=> \\begin{cases} x^2 = 1 \\\\ y = \\frac{2}{x} \\end{cases} <=> \\begin{cases} x = 1 \\\\ y = 2 \\end{cases} \\\\  \\begin{cases} x = -1 \\\\ y = -2 \\end{cases}$ Do đó z có hai căn bậc hai là: $z_1 = 1 + 2i$ và $z_2 = -1 - 2i$",
+                            "answer": "$z_1 = 1 + 2i$ và $z_2 = -1 - 2i$"
+                        },
+                        {
+                            "question": "Tính căn bậc hai của số phức $z = 8 + 6i$ ra kết quả:",
+                            "solution": "Giả sử $w = x + yi$ là một căn bậc hai của số phức $z = 8 + 6i$. $w^2 = z <=> (x + yi)^2 = 8 + 6i <=> \\begin{cases} x^2 - y^2 = 8 \\\\ 2xy = 6 \\end{cases} <=> \\begin{cases} x^2 = 9 \\\\ y = \\frac{3}{x} \\end{cases} <=> \\begin{cases} x = 3 \\\\ y = 1 \\end{cases} \\\\  \\begin{cases} x = -3 \\\\ y = -1 \\end{cases}$ Ta có: Do đó z có hai căn bậc hai là: $\\begin{bmatrix} z_1 = 3 + i \\\\ z_2 = -3 - i \\end{bmatrix}$",
+                            "answer": "$\\begin{bmatrix} z_1 = 3 + i \\\\ z_2 = -3 - i \\end{bmatrix}$"
+                        },
+                        {
+                            "question": "Cho z = 3 + 4i. Tìm căn bậc hai của z.",
+                            "solution": "Giả sử $w = x + yi$ là một căn bậc hai của số phức $z = 3 + 4i$. Ta có: $w^2 = z <=> (x + yi)^2 = 3 + 4i <=> \\begin{cases} x^2 - y^2 = 3 \\\\ 2xy = 4 \\end{cases} <=> \\begin{cases} x^2 = 4 \\\\ y = \\frac{2}{x} \\end{cases} <=> \\begin{cases} x = 2 \\\\ y = 1 \\end{cases} \\\\  \\begin{cases} x = -2 \\\\ y = -1 \\end{cases}$ Do đó z có hai căn bậc hai là $\\begin{bmatrix} z = 2 + i \\\\ z = -2 - i \\end{bmatrix}$",
+                            "answer": "$\\begin{bmatrix} z = 2 + i \\\\ z = -2 - i \\end{bmatrix}$"
+                        },
+                        {
+                            "question": "Căn bậc hai của số phức 4 + 6$\\sqrt{5}$i là:",
+                            "solution": "Giả sử w là một căn bậc hai của 4 + 6$\\sqrt{5}$i. Ta có: $w^2 = 4 + 6\\sqrt{5}i <=> w^2 = (3 + \\sqrt{5}i)^2 => w = \\pm (3 + \\sqrt{5}i).$",
+                            "answer": "$\\pm (3 + \\sqrt{5}i)$"
+                        },
+                        {
+                            "question": "Gọi z là căn bậc hai có phần ảo âm của 33 - 56i . Phần thực của z là:",
+                            "solution": "Ta có: 33 - 56i = (7 - 4i)^2 => z = 7 - 4i Do đó phần thực của z là 7.",
+                            "answer": "7"
+                        },
+                        {
+                            "question": "Trong C , căn bậc hai của -121 là:",
+                            "solution": "Ta có: z = -121 nên z = (11i)^2. Do đó z có hai căn bậc hai là z = 11i và z = -11i",
+                            "answer": "11i và -11i"
+                        },
+                        {
+                            "question": "Tìm các căn bậc hai của -9.",
+                            "solution": "Ta có -9 = 9i^2 nên -9 có các căn bậc hai là 3i và -3i.",
+                            "answer": "3i và -3i"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Viết số phức dưới dạng lượng giác",
+                    "general guide":"*Định nghĩa: Cho số phức $z \\neq 0$. Gọi $M$ là điểm trong mặt phẳng phức biểu diễn số $z$. Số đo (radian) của mỗi góc lượng giác tia đầu Ox, tia cuối OM được gọi là một acgumen của $z$. * Cho số phức $z = a + bi$, $(a, b \\in \\mathbb{R})$ Để viết số phức $z$ dưới dạng lượng giác ta làm như sau: + Tìm một acgumen của số phức $z$ là $\\varphi$ + Tính môđun của số phức $z$: $|z| = r = \\sqrt{a^2 + b^2}$. + Khi đó, ta có $z = r.(\\cos\\varphi + i.\\sin\\varphi)$",
+                    "questions":
+                    [
+                        {
+                            "question": "Viết số phức $z = 6 + 6i$ dưới dạng lượng giác?",
+                            "solution": "Ta có: $|z| = r = \\sqrt{6^2 + 6^2} = 6\\sqrt{2}$. Chọn $\\varphi$ là số thực thỏa mãn \\sqrt{6^2 + 6^2} $\\Rightarrow \\varphi = \\frac{\\pi}{4}$. Do đó, dạng lượng giác của số phức z là: $z = 6\\sqrt{2}(cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4})$",
+                            "answer": "$z = 6\\sqrt{2}(cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4})$"
+                        },
+                        {
+                            "question": "Viết số 10 dưới dạng lượng giác?",
+                            "solution": "Ta có: Số 10 có mô đun là 10 và có một acgumen bằng 0 nên nó có dạng lượng giác là: $10.(cos0 + i.sin0).$",
+                            "answer": "$10.(cos0 + i.sin0)$"
+                        },
+                        {
+                            "question": "Viết $-\\frac{\\sqrt{3}}{2}$ dưới dạng lượng giác.",
+                            "solution": "Số $-\\frac{\\sqrt{3}}{2}$ có mô đun là $\\frac{\\sqrt{3}}{2}$, có một acgumen là $\\pi$ nên số đó có dạng lượng giác là: $-\\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}}{2}(cos\\pi + i.sin\\pi)$",
+                            "answer": "$-\\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}}{2}(cos\\pi + i.sin\\pi)$"
+                        },
+                        {
+                            "question": "Viết số phức $z = \\frac{1}{2 + 2i}$ dưới dạng lượng giác?",
+                            "solution": "Ta có : $z = \\frac{1}{2 + 2i} = \\frac{1}{2(1 + i)} = \\frac{1 - i}{2(1 + i)(1 - i)} = \\frac{1 - i}{4} = \\frac{1}{4} - \\frac{i}{4}$. Ta có $|z| = \\sqrt{(\\frac{1}{4})^2 + (\\frac{-1}{4})^2} = \\frac{\\sqrt{2}}{4}$. Một acgumen là $\\varphi$ thỏa mãn: $cos\\varphi = \\frac{1}{\\sqrt{2}}$; $sin\\varphi = \\frac{-1}{\\sqrt{2}} => \\varphi = -\\frac{\\pi}{4}$. Do đó ,dạng lượng giác của số phức z là: $z = \\frac{1}{2 + 2i} = \\frac{\\sqrt{2}}{4}[cos(-\\frac{\\pi}{4}) + i sin(-\\frac{\\pi}{4})].$",
+                            "answer": "$z = \\frac{1}{2 + 2i} = \\frac{\\sqrt{2}}{4}[cos(-\\frac{\\pi}{4}) + i sin(-\\frac{\\pi}{4})].$"
+                        },
+                        {
+                            "question": "Viết số phức z = 100i dưới dạng lượng giác?",
+                            "solution": "Ta có: $|z| = \\sqrt{0^2 + 100^2} = 100$. Gọi $\\varphi$ là một acgumen của z thì $\\varphi$ thỏa mãn: $cos\\varphi = 0; sin\\varphi = 1 => \\varphi = \\frac{\\pi}{2}$. Do đó, dạng lượng giác của số phức z là: $z = 100(cos\\frac{\\pi}{2} + i.sin\\frac{\\pi}{2})$",
+                            "answer": "$z = 100(cos\\frac{\\pi}{2} + i.sin\\frac{\\pi}{2})$"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Nhân, chia số phức dạng lượng giác",
+                    "general guide":"Nếu $z = r.(\\cos\\varphi + i.\\sin\\varphi)$ và $z' = r'.(\\cos\\varphi' + i.\\sin\\varphi')$; $(r \\geq 0; r' \\leq 0)$ Thì $z.z' = r.r'[\\cos(\\varphi + \\varphi') + i.\\sin(\\varphi + \\varphi')]$ $\\frac{z'}{z} = \\frac{r'}{r} .[\\cos(\\varphi' - \\varphi) + i.\\sin(\\varphi' - \\varphi)]$; $(r > 0)$",
+                    "questions":
+                    [
+                        {
+                            "question": "Viết số phức sau dưới dạng lượng giác $z = (1 - i\\sqrt{3}).(1 + i)$",
+                            "solution": "Ta có: $1 - i\\sqrt{3} = 2.[cos(-\\frac{\\pi}{3}) + i sin(-\\frac{\\pi}{3})]$ và $1 + i = \\sqrt{2}[cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4}]$. Áp dụng công thức nhân, chia số phức ta được: $z = (1 - i\\sqrt{3})(1 + i) = 2\\sqrt{2}[cos(-\\frac{\\pi}{12}) + i.sin(-\\frac{\\pi}{12})]$",
+                            "answer": "$2\\sqrt{2}[cos(-\\frac{\\pi}{12}) + i.sin(-\\frac{\\pi}{12})]$"
+                        },
+                        {
+                            "question": "Viết số phức sau dưới dạng lượng giác $z = \\frac{2 + 2i}{1 + \\sqrt{3}i}$",
+                            "solution": "Ta có: $2 + 2i = 2\\sqrt{2}[cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4}]$ và $1 + \\sqrt{3}i = 2.[cos\\frac{\\pi}{3} + i.sin\\frac{\\pi}{3}]$. Do đó: $z = \\frac{2 + 2i}{1 + \\sqrt{3}i} = \\frac{2\\sqrt{2}[cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4}]}{2.[cos\\frac{\\pi}{3} + i.sin\\frac{\\pi}{3}]} = \\sqrt{2}[cos(-\\frac{\\pi}{12}) + i.sin(-\\frac{\\pi}{12})]$",
+                            "answer": "$\\sqrt{2}[cos(-\\frac{\\pi}{12}) + i.sin(-\\frac{\\pi}{12})]$"
+                        },
+                        {
+                            "question": "Viết số phức sau dưới dạng lượng giác $z = \\frac{3}{10\\sqrt{3} + 10i}$",
+                            "solution": "Ta có: $3 = 3.(cos0 + i.sin0)$ và $10\\sqrt{3} + 10i = 20.(cos\\frac{\\pi}{6} + i.sin\\frac{\\pi}{6})$. Do đó, $z = \\frac{3}{10\\sqrt{3} + 10i} = \\frac{3.(cos 0 + i.sin 0)}{20.(cos\\frac{\\pi}{6} + i.sin\\frac{\\pi}{6})} = \\frac{3}{20}(cos(-\\frac{\\pi}{6}) + i.sin(-\\frac{\\pi}{6}))$",
+                            "answer": "$\\frac{3}{20}(cos(-\\frac{\\pi}{6}) + i.sin(-\\frac{\\pi}{6}))$"
+                        },
+                        {
+                            "question": "Viết số phức sau dưới dạng lượng giác $z = \\frac{1 - i}{(\\sqrt{3} + i)(2 + 2i)}$",
+                            "solution": "Ta có: $\\sqrt{3} + i = 2(cos\\frac{\\pi}{6} + i.sin\\frac{\\pi}{6})$ và $2 + 2i = 2\\sqrt{2}.(cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4}) \\Rightarrow (\\sqrt{3} + 1)(2 + 2i) = 4\\sqrt{2}(cos\\frac{5\\pi}{12} + i.sin\\frac{5\\pi}{12})$. Lại có: $1 - i = \\sqrt{2}.(cos(-\\frac{\\pi}{4}) + i.sin(-\\frac{\\pi}{4}))$. Suy ra: $z = \\frac{1 - i}{(\\sqrt{3} + i)(2 + 2i)} = \\frac{\\sqrt{2}}{4\\sqrt{2}}[cos(-\\frac{5\\pi}{12}) + i.sin(-\\frac{5\\pi}{12})] = \\frac{1}{4}[cos(-\\frac{2\\pi}{3}) + i.sin(-\\frac{2\\pi}{3})]$",
+                            "answer": "$\\frac{1}{4}[cos(-\\frac{2\\pi}{3}) + i.sin(-\\frac{2\\pi}{3})]$"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Công thức Moa-vro",
+                    "general guide": "* Công thức Moa- vro Cho số nguyên dương $n$ ta có; $[r(\\cos\\varphi + i.\\sin\\varphi)]^n = r^n(\\cos(n\\varphi) + i.\\sin(n\\varphi))$ Khi $r = 1$ ta có: $(\\cos\\varphi + i.\\sin\\varphi)^n = \\cos(n\\varphi) + i.\\sin(n\\varphi)$",
+                    "questions":
+                    [
+                        {
+                            "question": "Viết số phức sau dưới dạng lượng giác: $z = (\\sqrt{2} + \\sqrt{2}i)^{10}$",
+                            "solution": "Ta có: $\\sqrt{2} + \\sqrt{2}i = 2.(cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4})$. Do đó, $z = (\\sqrt{2} + \\sqrt{2}i)^{10} = [2.(cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4})]^{10} = 2^{10}.(cos\\frac{10\\pi}{4} + i.sin\\frac{10\\pi}{4}) = 2^{10}.(cos\\frac{5\\pi}{2} + i.sin\\frac{5\\pi}{2})$",
+                            "answer": "$2^{10}.(cos\\frac{5\\pi}{2} + i.sin\\frac{5\\pi}{2})$"
+                        },
+                        {
+                            "question": "Viết số phức sau dưới dạng lượng giác $z = \\frac{(1 - i)^{10}}{(\\sqrt{3} + i)^9}$",
+                            "solution": "Ta có: $1 - i = \\sqrt{2}[cos(-\\frac{\\pi}{4}) + i.sin(-\\frac{\\pi}{4})] \\Rightarrow (1 - i)^{10} = (\\sqrt{2})^{10}.[cos(-10.\\frac{\\pi}{4}) + i.sin(-10.\\frac{\\pi}{4})] = 2^5[cos(-\\frac{5\\pi}{2}) + i.sin(-\\frac{5\\pi}{2})]$. Lại có: $\\sqrt{3} + i = 2(cos\\frac{\\pi}{6} + i.sin\\frac{\\pi}{6}) \\Rightarrow (\\sqrt{3} + i)^9 = 2^9.(cos9.\\frac{\\pi}{6} + i.sin9.\\frac{\\pi}{6}) = 2^9.(cos\\frac{3\\pi}{2} + i.sin\\frac{3\\pi}{2})$. Do đó, $z = \\frac{(1 - i)^{10}}{(\\sqrt{3} + i)^9} = \\frac{2^5[cos(-\\frac{5\\pi}{2}) + i.sin(-\\frac{5\\pi}{2})]}{2^9.(cos\\frac{3\\pi}{2} + i.sin\\frac{3\\pi}{2})} = \\frac{1}{2^4}(cos(-4\\pi) + i.sin(-4\\pi))$",
+                            "answer": "$\\frac{1}{2^4}(cos(-4\\pi) + i.sin(-4\\pi))$"
+                        },
+                        {
+                            "question": "Cho số phức $(\\cos \\frac{\\pi}{3} - i.sin\\frac{\\pi}{3})^5(1 + \\sqrt{3}i)^7$. Tìm phần ảo của số phức.",
+                            "solution": "Ta có: $1 + \\sqrt{3}i = 2.(cos\\frac{\\pi}{3} + i.sin\\frac{\\pi}{3})$ và $i^4 = 1$ nên ta có: $(\\cos \\frac{\\pi}{3} - i.sin\\frac{\\pi}{3})^5(1 + \\sqrt{3}i)^7 = (\\cos \\frac{\\pi}{3} - i.sin\\frac{\\pi}{3})^5.i.[2(cos\\frac{\\pi}{3} + i.sin\\frac{\\pi}{3})]^7 = 2^7(cos(-\\frac{\\pi}{3}) + i.sin(-\\frac{\\pi}{3})).[(\\cos \\frac{7\\pi}{3} + i.sin\\frac{7\\pi}{3})] = 2^7[cos2\\pi + i.sin2\\pi] i = 2^7 i$. Vậy phần ảo bằng $2^7 = 128$.",
+                            "answer": "128"
+                        },
+                        {
+                            "question": "Tính số phức sau: $\\frac{(1 - i)^{10}(\\sqrt{3} + i)^5}{(-1 - i\\sqrt{3})^{10}}$",
+                            "solution": "Ta có: $1 - i = \\sqrt{2}.(cos(-\\frac{\\pi}{4}) + i.sin(-\\frac{\\pi}{4}))$; $\\sqrt{3} + i = 2(cos\\frac{\\pi}{6} + i.sin\\frac{\\pi}{6})$; $-1 - i\\sqrt{3} = 2(cos\\frac{4\\pi}{3} + i.sin\\frac{4\\pi}{3})$. Do đó: $z = \\frac{(\\sqrt{2})^{10}(cos(-\\frac{\\pi}{4}) + i.sin(-\\frac{\\pi}{4}))^{10}}{2^{10}(cos\\frac{4\\pi}{3} + i.sin\\frac{4\\pi}{3})^{10}} \\frac{2^5(cos\\frac{\\pi}{6} + i.sin\\frac{\\pi}{6})^5}{2^{10}(cos\\frac{4\\pi}{3} + i.sin\\frac{4\\pi}{3})^{10}} = \\frac{cos(-\\frac{5\\pi}{2}) + i.sin(-\\frac{5\\pi}{2})}{cos\\frac{40\\pi}{3} + i.sin\\frac{40\\pi}{3}} \\frac{cos\\frac{5\\pi}{6} + i.sin\\frac{5\\pi}{6}}{cos\\frac{40\\pi}{3} + i.sin\\frac{40\\pi}{3}} = cos(-15\\pi) + i.sin(-15\\pi) = -1$",
+                            "answer": "-1"
+                        },
+                        {
+                            "question": "Cho số phức $z = 1 - cos\\frac{\\pi}{8} + i.sin\\frac{\\pi}{8}$. Tính $z^{2012}$",
+                            "solution": "Ta có: $z = 2sin^2\\frac{\\pi}{16} + 2isin\\frac{\\pi}{16}cos\\frac{\\pi}{16} = 2sin\\frac{\\pi}{16}(sin\\frac{\\pi}{16} + icos\\frac{\\pi}{16}) = 2sin\\frac{\\pi}{16}(cos\\frac{7\\pi}{16} + i sin\\frac{7\\pi}{16})$. $=> z^{2012} = (2sin\\frac{\\pi}{16})^{2012}(cos\\frac{7\\pi}{16} + i sin\\frac{7\\pi}{16})^{2012} = (2sin\\frac{\\pi}{16})^{2012}(cos\\frac{3521\\pi}{4} + i sin\\frac{3521\\pi}{4}) = (2sin\\frac{\\pi}{16})^{2012}(cos\\frac{\\pi}{4} + i sin\\frac{\\pi}{4}) = (2sin\\frac{\\pi}{16})^{2012}(\\frac{\\sqrt{2}}{2} + i\\frac{\\sqrt{2}}{2})$",
+                            "answer": "$(2sin\\frac{\\pi}{16})^{2012}(\\frac{\\sqrt{2}}{2} + i\\frac{\\sqrt{2}}{2})$"
+                        },
+                        {
+                            "question": "Giải phương trình:\nz^5 + z^4 + z^3 + z^2 + z + 1 = 0?",
+                            "solution": "Ta có: $z^5 + z^4 + z^3 + z^2 + z + 1 = 0 \\Rightarrow z^4.(z + 1) + z^2.(z + 1) + (z + 1) = 0 \\Rightarrow (z + 1).(z^4 + z^2 + 1) = 0 \\Rightarrow \\begin{cases} z = -1 \\\\ z^4 + z^2 + 1 = 0 \\end{cases}$. Xét phương trình: $z^4 + z^2 + 1 = 0$ (*). Đặt $t = z^2$, khi đó phương trình (*) trở thành: $t^2 + t + 1 = 0$ (**). Có $\\Delta = 1^2 - 4.1.1 = -3$. Khi đó, (**) có hai nghiệm phức là: $t = \\frac{-1 \\pm \\sqrt{3}i}{2} \\Rightarrow z^2 = \\frac{-1 \\pm \\sqrt{3}i}{2} \\Leftrightarrow \\begin{cases} z^2 = \\frac{-1}{2} + \\frac{\\sqrt{3}}{2}i = cos\\frac{2\\pi}{3} + i sin\\frac{2\\pi}{3} \\\\ z^2 = \\frac{-1}{2} - \\frac{\\sqrt{3}}{2}i = cos(-\\frac{2\\pi}{3}) + i sin(-\\frac{2\\pi}{3}) \\end{cases}$. Từ $z^2 = cos\\frac{2\\pi}{3} + i sin\\frac{2\\pi}{3} \\Rightarrow \\begin{cases} z = cos\\frac{\\pi}{3} + i sin\\frac{\\pi}{3} = \\frac{1}{2} + i\\frac{\\sqrt{3}}{2} \\\\ z = -cos\\frac{\\pi}{3} - i sin\\frac{\\pi}{3} = -\\frac{1}{2} - i\\frac{\\sqrt{3}}{2} \\end{cases}$. Từ $z^2 = cos(-\\frac{2\\pi}{3}) + i sin(-\\frac{2\\pi}{3}) \\Rightarrow \\begin{cases} z = cos(-\\frac{\\pi}{3}) + i sin(-\\frac{\\pi}{3}) = \\frac{1}{2} - i\\frac{\\sqrt{3}}{2} \\\\ z = -cos(-\\frac{\\pi}{3}) - i sin(-\\frac{\\pi}{3}) = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2} \\end{cases}$. Vậy phương trình đã cho có tất cả cả 5 nghiệm: $z = -1; z = \\frac{1}{2} + \\frac{\\sqrt{3}}{2}i; z = -\\frac{1}{2} - \\frac{\\sqrt{3}}{2}i; z = \\frac{1}{2} - \\frac{\\sqrt{3}}{2}i; z = -\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i$.",
+                            "answer": "z = -1; z = $\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i$; z = -$\\frac{1}{2} - \\frac{\\sqrt{3}}{2}i$; z = $\\frac{1}{2} - \\frac{\\sqrt{3}}{2}i$; z = -$\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i$"
+                        },
+                        {
+                            "question": "Giải phương trình $z^6 + 64= 0$ ?",
+                            "solution": "Ta có : $z^6 + 64 = 0 \\Leftrightarrow z^6 = -64$. + Giả sử $z = x + yi = r(cos\\varphi + isin\\varphi)$; ($x,y \\in R$) $\\Rightarrow z^6 = r^6.(cos6\\varphi + isin6\\varphi)$ (1). + Ta có: $-64 = 64(cos\\pi + isin\\pi)$ và $z^6 = -64$ (2). Từ (1), (2) $\\Rightarrow r^6(cos6\\varphi + isin6\\varphi) = 64(cos\\pi + isin\\pi)$ $\\Rightarrow \\begin{cases} r^6 = 64 \\\\ r = 2 \\end{cases}$ (vì r > 0). Và $cos6\\varphi + isin6\\varphi = cos\\pi + isin\\pi$ $\\Rightarrow 6\\varphi = \\pi + 2k\\pi (k \\in Z)$ $\\Rightarrow \\varphi = \\frac{\\pi}{6} + 2k\\frac{\\pi}{6}$. Với k = 0 $\\Rightarrow z_1 = 2(cos\\frac{\\pi}{6} + isin\\frac{\\pi}{6}) = \\sqrt{3} + i$. Với k = -1 $\\Rightarrow z_2 = 2(cos(-\\frac{\\pi}{6}) + isin(-\\frac{\\pi}{6})) = \\sqrt{3} - i$. Với k = 1 $\\Rightarrow z_3 = 2(cos\\frac{\\pi}{2} + isin\\frac{\\pi}{2}) = 2i$. Với k = -2 $\\Rightarrow z_4 = 2(cos(-\\frac{\\pi}{2}) + isin(-\\frac{\\pi}{2})) = -2i$. Với k = -3 $\\Rightarrow z_5 = 2(cos(-\\frac{5\\pi}{6}) + isin(-\\frac{5\\pi}{6})) = -\\sqrt{3} - i$. Với k = 4 $\\Rightarrow z_6 = 2(cos\\frac{-7\\pi}{6} + isin\\frac{-7\\pi}{6}) = -\\sqrt{3} + i$. Vậy phương trình đã cho có 6 nghiệm là: $\\sqrt{3} \\pm i$; $\\pm 2i$; -$\\sqrt{3} \\pm i$",
+                            "answer": "$\\sqrt{3} \\pm i$; $\\pm 2i$; -$\\sqrt{3} \\pm i$"
+                        },
+                        {
+                            "question": "Gọi S là tập hợp các số nguyên dương n và $n \\in [1; 10]$ sao cho số phức $z = (1 + i\\sqrt{3})^n$ là số thực. Số phần tử của tập S là?",
+                            "solution": "Ta có: $1 + i\\sqrt{3} = 2(cos\\frac{\\pi}{3} + isin\\frac{\\pi}{3}) \\Rightarrow z = 2^n(cos\\frac{n\\pi}{3} + isin\\frac{n\\pi}{3})$. Để $z \\in R \\Rightarrow 2^n.sin\\frac{n\\pi}{3} = 0 \\Rightarrow sin\\frac{n\\pi}{3} = 0$ $\\Rightarrow$ n chia hết cho 3, mà n nguyên dương $n \\in [1; 10]$ $\\Rightarrow n \\in \\{3; 6; 9\\}$. Do đó, tập S có ba phần tử.",
+                            "answer": "3"
+                        },
+                        {
+                            "question": "Tìm số phức z sao cho $z^5$ và $\\frac{1}{\\overline{z}^2}$ là hai số phức liên hợp ?",
+                            "solution": "Gọi dạng lượng giác của số phức z là: $z = r(cos\\varphi + i.sin\\varphi)$. $\\Rightarrow \\begin{cases} z^5 = r^5(cos5\\varphi + i.sin5\\varphi); \\\\ z^2 = r^2(cos2\\varphi + i.sin2\\varphi) \\end{cases} \\Rightarrow \\overline{z}^2 = r^2(cos5\\varphi - i.sin5\\varphi) = r^2(cos(-5\\varphi) + i.sin(-5\\varphi))$. $\\Rightarrow \\frac{1}{\\overline{z}^2} = \\frac{1}{r^2(cos 2\\varphi + i.sin 2\\varphi)} = \\frac{cos 2\\varphi - i sin 2\\varphi}{r^2( cos^2 2\\varphi + sin^2 2\\varphi)} = \\frac{1}{r^2} [cos(-2\\varphi) + i.sin(-2\\varphi)]$. Do đó $z^5$ và $\\frac{1}{\\overline{z}^2}$ là hai số phức liên hợp khi và chỉ khi $\\overline{z^5} = \\frac{1}{\\overline{z}^2}$. Hay là: $r^5(cos(-5\\varphi) + i.sin(-5\\varphi)) = \\frac{1}{r^2} [cos(-2\\varphi) + i.sin(-2\\varphi)] \\Leftrightarrow \\begin{cases} \\frac{1}{r^2} = r^5 \\\\ 5\\varphi = 2\\varphi + k2\\pi (k \\in Z) \\end{cases} \\Leftrightarrow \\begin{cases} r = 1 \\\\ \\varphi = \\frac{k2\\pi}{3} \\end{cases}$.$\\Rightarrow z = cos\\frac{k2\\pi}{3} + i.sin\\frac{k2\\pi}{3}$ Với $\\varphi \\in [0; 2\\pi]$ nên $k \\in \\{0; 1; 2\\}$. Vậy số phức cần tìm là $z = cos\\frac{k2\\pi}{3} + i.sin\\frac{k2\\pi}{3}$ với $k \\in \\{0; 1; 2\\}$. Hay $z_1 = 1; z_2 = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}; z_3 = -\\frac{1}{2} - i\\frac{\\sqrt{3}}{2}$",
+                            "answer": "$z_1 = 1; z_2 = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}; z_3 = -\\frac{1}{2} - i\\frac{\\sqrt{3}}{2}$"
+                        },
+                        {
+                            "question": "Tính $S_1 = C_n^0 - C_n^2 + C_n^4 - C_n^6 + C_n^8 - ...$",
+                            "solution": "Xét khai triển nhị thức Newton: $(1 + i)^n = C_n^0 + i.C_n^1 + i^2.C_n^2 + i^3.C_n^3 + i^4.C_n^4 + ... + i^{n-1}.C_n^{n-1} + i^n.C_n^n$ Vì $i^k = \\begin{cases} 1 (k = 4m) \\\\ i (k = 4m + 1) \\\\ -1 (k = 4m + 2) \\\\ -i (k = 4m + 3) \\end{cases} m \\in Z^+$ nên ta có: $(1 + i)^n = C_n^0 - C_n^2 + C_n^4 - ... + i(C_n^1 - C_n^3 + C_n^5 - ...)$; (1). Mặt khác, theo công thức Moivre thì: $(1 + i)^n = (\\sqrt{2})^n(cos\\frac{\\pi}{4} + i.sin\\frac{\\pi}{4})^n = (\\sqrt{2})^n(cos\\frac{n\\pi}{4} + i.sin\\frac{\\pi}{4})$ (2). Từ (1) và (2) ta suy ra: $S_1 = C_n^0 - C_n^2 + C_n^4 - C_n^6 + C_n^8 - ... = (\\sqrt{2})^n cos\\frac{n\\pi}{4}$",
+                            "answer": "($\\sqrt{2})^n cos\\frac{n\\pi}{4}$"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tập hợp điểm biểu diễn số phức",
+                    "general guide":"",
+                    "questions":
+                    [
+                        {
+                        "question": "Tập hợp điểm biểu diễn các số phức z thỏa mãn điều kiện $|z - (1 + i)| = |z + 2i|$ là đường nào sau đây ?",
+                        "solution": "Gọi $z = x + yi, (x,y \\in R)$ được biểu diễn bởi điểm $M(x;y)$ trong mặt phẳng Oxy. Ta có: $|z - (1 + i)| = |z + 2i| \\Leftrightarrow |x + yi - 1 - i| = |x + yi + 2i| \\Leftrightarrow \\sqrt{(x - 1)^2 + (y - 1)^2} = \\sqrt{x^2 + (y + 2)^2} \\Leftrightarrow (x - 1)^2 + (y - 1)^2 = x^2 + (y + 2)^2 \\Leftrightarrow x + 3y + 1 = 0$. Suy ra tập hợp điểm biểu diễn số phức z là đường thẳng x + 3y + 1 = 0.",
+                        "answer": "Đường thẳng."
+                        },
+                        {
+                        "question": "Tìm tập hợp những điểm M biểu diễn số phức z trong mặt phẳng phức , biết số phức z thỏa mãn điều kiện $|z - 2i| = |z + 1|$.",
+                        "solution": "Gọi $z = x + yi; (x,y \\in R)$. Ta có: $|z - 2i| = |z + 1| <= |x + (y-2)i| = |(x+1) - yi| <=> x^2 + (y - 2)^2 = (x + 1)^2 + y^2 <=> 2x + 4y - 3 = 0$. Tập hợp những điểm M là đường thẳng có phương trình 2x + 4y - 3 = 0.",
+                        "answer": "Tập hợp những điểm M là đường thẳng có phương trình 2x + 4y - 3 = 0."
+                        },
+                        {
+                        "question": "Tập hợp điểm biểu diễn các số phức z thỏa mãn điều kiện $|z - 2 + 3i| = |z - 4i|$ là đường nào sau đây ?",
+                        "solution": "Gọi $z = x + yi$, biểu diễn bởi điểm $M(x;y)$ trong mặt phẳng Oxy. Ta có: $|z - 2 + 3i| = |z - 4i| <=> |x + yi - 2 + 3i| = |x + yi - 4i| \\Leftrightarrow \\sqrt{(x-2)^2 + (y+3)^2} = \\sqrt{x^2 + (y-4)^2} \\Leftrightarrow (x - 2)^2 + (y + 3)^2 = x^2 + (y - 4)^2 \\Leftrightarrow -4x + 4 + 6y + 9 = -8y + 16 \\Leftrightarrow -4x + 14y - 3 = 0$. Suy ra tập hợp điểm biểu diễn số phức z là đường thẳng -4x + 14y - 3 = 0.",
+                        "answer": "Đường thẳng."
+                        },
+                        {
+                        "question": "Tập hợp các điểm M biểu diễn số phức $|z - 2 + 5i| = 4$ thỏa mãn là:",
+                        "solution": "Gọi số phức $z = x + yi$. $|z - 2 + 5i| = 4 <=> |x - 2 + (y + 5)i| = 4 \\Leftrightarrow \\sqrt{(x-2)^2 + (y+5)^2} = 4 \\Leftrightarrow (x - 2)^2 + (y + 5)^2 = 16$. Vậy tập hợp điểm biểu diễn số phức là đường tròn tâm I(2; -5) bán kính R = 4.",
+                        "answer": "Đường tròn tâm I(2; -5) và bán kính bằng 4."
+                        },
+                        {
+                        "question": "Cho số phức z thỏa mãn $|z - 2| = 2$. Biết rằng tập hợp các điểm biểu diễn các số phức $w = (1 - i)z + i$ là một đường tròn. Tính bán kính r của đường tròn đó",
+                        "solution": "Ta có: $w = (1 - i)z + i <=> z = \\frac{w - i}{1 - i}$; đặt $w = x + yi ; x, y \\in R$. $\\Rightarrow z = \\frac{x + yi - i}{1 - i}$. Ta có: $|z - 2| = 2 \\Leftrightarrow |\\frac{x + yi - i}{1 - i} - 2| = 2 \\Leftrightarrow |\\frac{(x + yi - i)(1 + i)}{2} - 2| = 2 \\Leftrightarrow |\\frac{x + xi + yi - y - i + 1}{2} - 2| = 4 \\Leftrightarrow |x - y - 3 + (x + y - 1)i| = 4 \\Leftrightarrow (x - y - 3)^2 + (x + y - 1)^2 = 16 <=> 2x^2 + 2y^2 - 8x + 4y - 6 = 0  <=> x^2 + y^2 - 4x + 2y - 3 = 0$. Đường tròn có bán kính là $R = \\sqrt{2^2 + 1^2 + 3} = 2\\sqrt{2}$.",
+                        "answer": "2$\\sqrt{2}$"
+                        },
+                        {
+                        "question": "Cho số phức z thỏa mãn $|z - 1| = 2 ; w = (1 + \\sqrt{3}i)z + 2$. Tập hợp điểm biểu diễn của số phức w là đường tròn, tính bán kính đường tròn đó",
+                        "solution": "$w = (1 + \\sqrt{3}i)z + 2 <=> w = (1 + \\sqrt{3}i)(z - 1) + 1 + \\sqrt{3}i + 2 <=> w - (3 + \\sqrt{3}i) = (1 + \\sqrt{3}i)(z - 1) => |w - (3 + \\sqrt{3}i)| = |(1 + \\sqrt{3}i)||z - 1| = |(1 + \\sqrt{3}i)|.|(z - 1)| = 4$.",
+                        "answer": "4"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Tìm max min số phức",
+                    "general guide":"Để giải được các n này . cần nắm được các kiến thức sau: + Bất đẳng thức tam giác * $|z_1 + z_2| \\leq |z_1| + |z_2|$, dấu \"=\" khi $z_1 = kz_2$ với $k \\geq 0$. Dùng cho BĐT Mincopxki: * $|z_1 - z_2| \\leq |z_1| + |z_2|$, dấu \"=\" khi $z_1 = kz_2$ với $k \\leq 0$. Dùng cho BĐT vecto * $|z_1 + z_2| \\leq ||z_1| - |z_2||$, dấu \"=\" khi $z_1 = kz_2$ với $k \\leq 0$. * $|z_1 - z_2| \\leq ||z_1| - |z_2||$, dấu \"=\" khi $z_1 = kz_2$ với $k \\geq 0$. + Bất đẳng thức khác BĐT Cauchy: $A^2 + B^2 \\geq \\frac{(A+B)^2}{2}$ tìm min BĐT Bunhia Copski: $(Ax + By)^2 \\leq (A^2 + B^2)(x^2 + y^2)$ tìm max BĐT Mincopxki: $\\sqrt{a^2 + x^2} + \\sqrt{b^2 + y^2} \\geq \\sqrt{(a+b)^2 + (x+y)^2}$ tìm min. Dấu = xảy ra khi $\\frac{a}{b} = \\frac{x}{y}$ BĐT vecto $\\sqrt{a^2 + x^2} + \\sqrt{b^2 + y^2} \\geq \\sqrt{(a-b)^2 + (x-y)^2}$ tìm min. Dấu = xảy ra khi $\\frac{a}{b} = \\frac{x}{y}$",
+                    "questions": []
+                }
+            ]
+        },
+        {
+            "chapter": "Nguyên hàm",
+            "topics":
+            [
+                {
+                    "topic": "Nguyên hàm cơ bản",
+                    "general guide":"",
+                    "questions":[]
+                },
+                {
+                    "topic": "Nguyên hàm bằng cách đổi biến",
+                    "general guide":"* STT 1:\n  * Dạng tích phân: $\\int \\frac{f'(x)}{f(x)} dx$\n  * Cách đặt: $t = f(x)$\n  * Đặc điểm nhận dạng: Biểu thức dưới mẫu\n\n* STT 2:\n  * Dạng tích phân: $\\int f[e^{t(x)}] t'(x)dx$\n  * Cách đặt: $t = t(x)$\n  * Đặc điểm nhận dạng: Số mũ\n\n* STT 3:\n  * Dạng tích phân: $\\int f[t(x)] t'(x)dx$\n  * Cách đặt: $t = t(x)$\n  * Đặc điểm nhận dạng: Trong ngoặc\n\n* STT 4:\n  * Dạng tích phân: $\\int f[\\sqrt[n]{t(x)}] t'(x)dx$\n  * Cách đặt: $t = \\sqrt[n]{t(x)}$\n  * Đặc điểm nhận dạng: Căn thức\n\n* STT 5:\n  * Dạng tích phân: $\\int f(\\ln x) \\frac{dx}{x}$ \n  * Cách đặt: $t = \\ln x$\n  * Đặc điểm nhận dạng: dx/x, lnx\n\n* STT 6:\n  * Dạng tích phân: $\\int f(\\sin x) \\cos x dx$\n  * Cách đặt: $\\sin x$\n  * Đặc điểm nhận dạng: cosx dx, sinx\n\n* STT 7:\n  * Dạng tích phân: $\\int f(\\cos x) \\sin x dx$\n  * Cách đặt: $\\cos x$\n  * Đặc điểm nhận dạng: sinx dx, cosx\n\n* STT 8:\n  * Dạng tích phân: $\\int f(\\tan x) \\frac{dx}{\\cos^2 x}$ \n  * Cách đặt: $\\tan x$\n  * Đặc điểm nhận dạng: dx/cos²x, tanx\n\n* STT 9:\n  * Dạng tích phân: $\\int f(\\cot x) \\frac{dx}{\\sin^2 x}$\n  * Cách đặt: $\\cot x$\n  * Đặc điểm nhận dạng: dx/sin²x, cotx\n\n* STT 10:\n  * Dạng tích phân: $\\int f(e^{ax}) e^{ax}dx$\n  * Cách đặt: $e^{ax}$\n  * Đặc điểm nhận dạng: e^(ax) dx\n\nĐôi khi thay cách đặt t = t(x) bởi t = m.t(x) + n ta sẽ biến đổi dễ dàng hơn.",
+                    "questions":
+                    [
+                        {
+                            "question": "Tìm các họ nguyên hàm sau đây:\na) $\\int \\frac{x^3}{1+x^2} dx$\nb) $\\int x^2 \\sqrt{x^2+9} dx$",
+                            "solution": "a) Xét $\\int \\frac{x^3}{1+x^2} dx = \\int \\frac{x^2}{1+x^2} .xdx$. Đặt $t = 1 + x^2$, suy ra $dt = 2xdx \\Rightarrow \\frac{1}{2}dt = xdx$ và $x^2 = t-1$. Khi đó $\\int \\frac{x^3}{1+x^2}.xdx = \\frac{1}{2} \\int \\frac{t-1}{t} dt = \\frac{1}{2} \\int 1 - \\frac{1}{t} dt = \\frac{1}{2} (t - ln|t|) + C = \\frac{1}{2} (1 + x^2 - ln|1 + x^2|) + C$. b) Xét $\\int x^2 \\sqrt{x^2+9} .xdx$. Đặt $t = \\sqrt{x^2+9} \\Rightarrow t^2$. Suy ra ${dt = \\frac{tdt}{x^2+9}}$. Khi đó $\\int x^2 \\sqrt{x^2+9}.xdx = \\int (t^2 - 9)tdt = \\int (t^3 - 9t)dt = \\frac{t^4}{5} - \\frac{9t^2}{3} + C $. Như vậy $\\int x^2 \\sqrt{x^2+9} dx = \\frac{(\\sqrt{x^2+9})^4}{5} - 3{(\\sqrt{x^2+9})^2} + C$",
+                            "answer": "\\frac{1}{2} (1 + x^2 - ln|1 + x^2|) + C; \\frac{(\\sqrt{x^2+9})^4}{5} - 3{(\\sqrt{x^2+9})^2} + C"
+                        },
+                        {
+                            "question": "Tìm các họ nguyên hàm sau đây:\na) $\\int \\frac{2sinx}{1+3cosx} dx$\nb) $\\int \\frac{ln^{x-1}}{xlnx} dx$",
+                            "solution": "a) Xét $\\int \\frac{2sinx}{1+3cosx} dx$. Đặt $t = 1 + 3cosx$, suy ra $dt = -3sinxdx$, suy ra $- \\frac{1}{3}dt = sinxdx$. Khi đó $\\int \\frac{2sinx}{1+3cosx} dx = -\\frac{2}{3} \\int \\frac{1}{t} dt = - \\frac{2}{3} ln|t| + C = -\\frac{2}{3} ln|1 + 3cosx| + C$. b) Xét $\\int \\frac{ln^{x-1}}{xlnx} dx$. Đặt $t = lnx$, suy ra $dt = \\frac{1}{x}dx$. Khi đó $\\int \\frac{ln^{x-1}}{xlnx} dx = \\int \\frac{t^2-1}{t} dt = \\int (t - \\frac{1}{t})dt = \\frac{t^2}{2} - ln|t| + C = \\frac{ln^2x}{2} - ln|lnx| + C$",
+                            "answer": "-\\frac{2}{3} ln|1 + 3cosx| + C; \\frac{ln^2x}{2} - ln|lnx| + C"
+                        },
+                        {
+                            "question": "Tìm các họ nguyên hàm sau đây:\na) $\\int xe^{x^2} dx$\nb) $\\int \\frac{e^{tanx}}{cos^2x} dx$",
+                            "solution": "a) Xét $\\int xe^{x^2} dx$. Đặt $t = x^2$, suy ra $dt = 2xdx \\Rightarrow \\frac{1}{2}dt = xdx$. Khi đó $\\int xe^{x^2} dx = \\frac{1}{2} \\int e^t dt = \\frac{1}{2}e^t + C = \\frac{1}{2}e^{x^2} + C$. b) Xét $\\int \\frac{e^{tanx}}{cos^2x} dx$. Đặt $t = tanx$, suy ra $dt = \\frac{1}{cos^2x}dx$. Khi đó $\\int \\frac{e^{tanx}}{cos^2x} dx = \\int e^t dt = e^t + C = e^{tanx} + C$",
+                            "answer": "\\frac{1}{2}e^{x^2} + C; e^{tanx} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int (\\sqrt[3]{x} - 2)dx$",
+                            "solution": "Xét $\\int (\\sqrt[3]{x} - 2)dx$. Đặt $t = \\sqrt[3]{x} - 2 \\Rightarrow dx = 3t^2dt$. Khi đó $\\int (\\sqrt[3]{x} - 2)dx = \\int 3t^3dt = \\frac{3}{4}t^4 + C = \\frac{3}{4}(\\sqrt[3]{x} - 2)^4 + C$",
+                            "answer": "\\frac{3}{4}(\\sqrt[3]{x} - 2)^4 + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int e^{sin^2x}sin2x dx$",
+                            "solution": "Xét $\\int e^{sin^2x}sin2x dx$. Đặt $t = sin^2x$, suy ra $dt = 2sin x cos x dx \\Rightarrow dt = sin2xdx$. Khi đó $\\int e^{sin^2x}sin2x dx = \\int e^tdt = e^t + C = e^{sin^2x} + C$",
+                            "answer": "e^{sin^2x} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int \\frac{x}{(2x+1)^3} dx$",
+                            "solution": "Xét $\\int \\frac{x}{(2x+1)^3} dx = \\frac{1}{4} \\int \\frac{2x}{(2x+1)^3} .2dx$. Đặt $t = 2x + 1$, suy ra $dt = 2dx$. Khi đó $\\int \\frac{2x}{(2x+1)^3} .2dx = \\frac{1}{4} \\int \\frac{t-1}{t^3} dt = \\frac{1}{4} \\int (t^{-2} - t^{-3})dt = \\frac{1}{4} (-\\frac{1}{t} + \\frac{1}{2t^2}) + C$. Vậy $\\int \\frac{x}{(2x+1)^3} dx = \\frac{1}{8(2x+1)^2} - \\frac{1}{4(2x+1)} + C$",
+                            "answer": "\\frac{1}{8(2x+1)^2} - \\frac{1}{4(2x+1)} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int x^5(1 - x^3)^6 dx$",
+                            "solution": "Xét $\\int x^5(1 - x^3)^6 dx = \\int x^3(1 - x^3)^6 x^2dx$. Đặt $t = 1 - x^3$, suy ra $dt = -3x^2dx \\Rightarrow -\\frac{1}{3}dt = x^2dx$. Khi đó $\\int x^3(1 - x^3)^6 x^2dx = -\\frac{1}{3} \\int (1-t)t^6 dt = -\\frac{1}{3} (\\frac{t^7}{7} - \\frac{t^8}{8}) + C$. Vậy $\\int x^5(1 - x^3)^6 dx = -\\frac{(1-x^3)^7}{21} + \\frac{(1-x^3)^8}{24} + C$",
+                            "answer": "-\\frac{(1-x^3)^7}{21} + \\frac{(1-x^3)^8}{24} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int x \\sqrt[4]{1-x^2}dx$",
+                            "solution": "Xét $\\int x \\sqrt[4]{1-x^2}dx$. Đặt $t = \\sqrt[4]{1-x^2} \\Rightarrow t^4 = 1 - x^2$, suy ra $4t^3dt = -2xdx \\Rightarrow -2t^3dt = xdx$. Khi đó $\\int x \\sqrt[4]{1-x^2}dx = -2 \\int t .t^3 dt = -2 \\frac{t^5}{5} + C = \\frac{2(1-x^2)^{\\frac{5}{4}}}{5} + C$",
+                            "answer": "\\frac{2(1-x^2)^{\\frac{5}{4}}}{5} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int \\frac{xln(x^2+1)}{x^2+1} dx$",
+                            "solution": "Xét $\\int \\frac{xln(x^2+1)}{x^2+1} dx$. Đặt $t = ln(x^2 + 1)$, suy ra $dt = \\frac{2x}{x^2+1} dx \\Rightarrow \\frac{1}{2}dt = \\frac{x}{x^2+1} dx$. Khi đó $\\int \\frac{xln(x^2+1)}{x^2+1} dx = \\frac{1}{2} \\int t dt = \\frac{t^2}{4} + C = \\frac{1}{4}ln^2(x^2 + 1) + C$",
+                            "answer": "\\frac{1}{4}ln^2(x^2 + 1) + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int sin^4x cosx dx$",
+                            "solution": "Xét $\\int sin^4x cosx dx$. Đặt $t = sinx$, suy ra $dt = cosx dx$. Khi đó $\\int sin^4x cosx dx = \\int t^4 dt = \\frac{t^5}{5} + C = \\frac{sin^5x}{5} + C$",
+                            "answer": "\\frac{sin^5x}{5} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int \\frac{x^3-1}{x^4+x} dx$",
+                            "solution": "Xét $\\int \\frac{x^3-1}{x^4+x} dx = \\int \\frac{x^3-1}{x(x^3+1)} dx = \\int \\frac{x^3-1}{x^3+1} .\\frac{1}{x} dx$. Đặt $t = x^3 + 1$, suy ra $dt = 3x^2dx \\Rightarrow \\frac{1}{3}dt = x^2dx$. Khi đó $\\int \\frac{x^3-1}{x^3+1} .\\frac{1}{x} dx = \\frac{2}{3} \\int \\frac{t-2}{t-1} dt = \\frac{1}{3} ln \\frac{t^2}{|t-1|} + C = \\frac{1}{3}ln \\frac{(x^3+1)^2}{|x^3+1|} + C$",
+                            "answer": "\\frac{1}{3}ln \\frac{(x^3+1)^2}{|x^3+1|} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int \\frac{ln^2x}{x(1+\\sqrt{lnx})} dx$",
+                            "solution": "Xét $\\int \\frac{ln^2x}{x(1+\\sqrt{lnx})} dx$. Đặt $t = 1 + \\sqrt{lnx} \\Rightarrow (t-1)^2 = lnx \\Leftrightarrow lnx = t^2 - 2t$, suy ra $\\frac{dx}{x} = (2t - 2)dt$. Khi đó $\\int \\frac{ln^2x}{x(1+\\sqrt{lnx})} dx = \\int \\frac{(t^2 - 2t)^2}{t} . (2t - 2)dt = 2 \\int (t^4 - 5t^3 + 8t^2 - 4t)dt = 2 ( \\frac{t^5}{5} - \\frac{5}{2}t^4 + \\frac{16}{3}t^3 - 4t^2) + C$.",
+                            "answer": "2 ( \\frac{t^5}{5} - \\frac{5}{2}t^4 + \\frac{16}{3}t^3 - 4t^2) + C with t = 1 + \\sqrt{lnx}"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int \\frac{(x+1)^3}{x^2+2x-3} dx$",
+                            "solution": "Xét $\\int \\frac{(x+1)^3}{x^2+2x-3} dx = \\int \\frac{x^2+2x+1}{x^2+2x-3} .(x + 1)dx$. Đặt $t = x^2 + 2x - 3$ suy ra $dt = (2x + 2)dx \\Rightarrow \\frac{1}{2}dt = (x + 1)dx$. Khi đó $\\int \\frac{x^2+2x+1}{x^2+2x-3} .(x + 1)dx = \\frac{1}{2} \\int (1 + \\frac{4}{t}) dt = \\frac{1}{2} (t + 4ln|t|) + C$. Vậy $\\int \\frac{(x+1)^3}{x^2+2x-3} dx = \\frac{1}{2} (x^2 + 2x - 3 + 4ln|x^2 + 2x - 3|) + C$",
+                            "answer": "\\frac{1}{2} (x^2 + 2x - 3 + 4ln|x^2 + 2x - 3|) + C"
+                        }
+                        
+                    ]
+                },
+                {
+                    "topic":"Nguyên hàm bằng phương pháp từng phần",
+                    "general guide":"Với n tìm nguyên hàm của các hàm số dạng tích (hoặc thương) của hai hàm số \"khác lớp hàm\" ta thường sử dụng phương pháp nguyên hàm từng phần theo công thức $\\int udv = uv - \\int vdu$\nDưới đây là một số trường hợp thường gặp như thế (với P(x) là một đa thức theo ẩn x)\n\n* Gặp $\\int P(x).e^{ax+b} dx$, ta đặt $\\begin{cases} u = P(x) \\\\ dv = e^{ax+b}dx \\end{cases}$\n\n* Gặp $\\int P(x) \\frac{\\sin(mx+n)}{\\cos(mx+n)} dx$, ta đặt $\\begin{cases} u = P(x) \\\\ dv = \\frac{\\sin(mx+n)}{\\cos(mx+n)} dx \\end{cases}$\n\n* Gặp $\\int f(x).\\ln^n(ax + b) dx$ ta đặt $\\begin{cases} u = \\ln^n(ax + b) \\\\ dv = f(x)dx \\end{cases}$\n\n* Gặp $\\int e^{ax+b} \\frac{\\sin(mx+n)}{\\cos(mx+n)} dx$, ta đặt $\\begin{cases} u = e^{ax+b} \\\\ dv = \\frac{\\sin(mx+n)}{\\cos(mx+n)} dx \\end{cases}$",
+                    "questions":
+                    [
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số\na) $\\int xsinxdx$\nb) $\\int fe^x sinx dx$",
+                            "solution": "a) Xét $\\int xsinxdx$. Đặt $u = x$ và $dv = sinxdx$. Theo công thức tính nguyên hàm từng phần, ta có $\\int xsinxdx= -xcosx + \\int cosxdx= -xcosx + sinx + C$. b) Xét $\\int fe^x sinx dx$. Đặt $u = sinx$ và $dv = e^x dx$. Ta có $F(x) = \\int e^x sinx dx= e^x sinx - \\int e^x cosx dx= e^x sinx - G(x)$ (1). Với $G(x) = \\int e^x cosx dx$, Đặt $u= cosx$ và $dv=e^x dx$, ta có $G(x) = e^x cosx + \\int e^x sinx dx$,. Từ (1) và (2) ta có $\\int e^x sinx dx = e^x sinx - e^x cosx - F(x)$. Nên $\\Rightarrow F(x) = \\int e^x sinx dx= \\frac{e^x(sinx - cosx)}{2} + C$.",
+                            "answer": "-xcosx + sinx + C; \\frac{e^x(sinx - cosx)}{2} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số\na) $\\int x.2^x dx$\nb) $\\int (x^2-1)e^x dx$",
+                            "solution": "a) Xét $\\int x.2^x dx$. Đặt $u = x$ và $dv = 2^xdx \\Rightarrow v = \\frac{2^x}{ln2}$. Ta có $\\int x2^x dx = \\frac{x.2^x}{ln2} - \\int \\frac{2^x}{ln2} dx = \\frac{x.2^x}{ln2} - \\frac{2^x}{ln^2} + C$. b) Suy ra $\\int f(x)dx = (x^2 -1)e^x - \\int 2x.e^x dx$. Suy ra $\\int f(x)dx = (x^2 -1).e^x - 2x.e^x - \\int 2.e^x dx = (x^2-1) - 2x.e^x + C$",
+                            "answer": "\\frac{x.2^x}{ln2} - \\frac{2^x}{ln^2} + C; (x^2-1) - 2x.e^x + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số\na) $\\int 2xln(x-1)dx$\nb) $\\int \\frac{ln(1+x)}{x^2} dx$",
+                            "solution": "a) Xét $\\int 2xln(x-1)dx$. Đặt $u = ln(x-1) \\Rightarrow du = \\frac{1}{x-1} dx$ và $dv = 2xdx \\Rightarrow v = x^2 - 1$. Ta có $\\int 2xln(x-1)dx = (x^2 - 1)ln(x-1) - \\int (x + 1)dx = (x^2-1)ln(x-1) - \\frac{x^2}{2} - x + C$. b) Đặt $u = ln(1+x) \\Rightarrow du = \\frac{1}{1+x} dx$ và $dv = \\frac{1}{x^2} dt \\Rightarrow v = - \\frac{1+x}{x}$. Suy ra $F(x) = \\int \\frac{1+x}{x} .ln(1+x) + \\int \\frac{1}{x} dx = - \\frac{1+x}{x} ln|x| + C$",
+                            "answer": "(x^2-1)ln(x-1) - \\frac{x^2}{2} - x + C; - \\frac{1+x}{x} ln|x| + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int (1-x)cosxdx$",
+                            "solution": "Đặt $u = 1 - x \\Rightarrow du = -dx$ và $dv = cosxdx \\Rightarrow v = sinx$. $\\Rightarrow \\int (1-x)cosxdx = (1-x)sinx + \\int sinxdx = (1-x)sinx - cosx + C$",
+                            "answer": "(1-x)sinx - cosx + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int xsin2x dx$",
+                            "solution": "Xét $\\int xsin2x dx$. Đặt $u = x \\Rightarrow du = dx$ và $dv = sin2xdx \\Rightarrow v = -\\frac{1}{2}cos2x$. Khi đó $\\int xsin2x dx = -\\frac{x}{2}cos2x + \\int \\frac{1}{2} cos2x dx = - \\frac{x}{2}cos2x + \\frac{1}{4}sin2x + C$",
+                            "answer": "-\\frac{x}{2}cos2x + \\frac{1}{4}sin2x + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int x^2cosxdx$",
+                            "solution": "$F(x) = \\int x^2cosxdx$. $F(x) = x^2sinx - \\int 2xsinxdx$. Đặt $u = 2x \\Rightarrow du = 2dx$ và $dv = sinxdx \\Rightarrow v = -cosx$. $F(x) = x^2sinx - (-2xcosx + \\int 2cosxdx) = x^2sinx + 2xcosx - 2sinxC$",
+                            "answer": "x^2sinx + 2xcosx - 2sinxC"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int lnx dx$",
+                            "solution": "Đặt $u = lnx \\Rightarrow du = \\frac{1}{x} dx$ và $dv = dx \\Rightarrow v = x$. Ta có $\\int lnx dx = xlnx - \\int dx = xlnx - x + C$",
+                            "answer": "xlnx - x + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int \\frac{ln(lnx)}{x}dx$",
+                            "solution": "Đặt $t = lnx \\Rightarrow I = \\int lntdt$. Đặt $u = lnt \\Rightarrow du = \\frac{1}{t} dt$ và $dv = dt \\Rightarrow v = t$. $\\int \\frac{ln(lnx)}{x}dx = \\int tln t - \\int dt = tln t - t + C = lnx.ln(lnx) - lnx + C$",
+                            "answer": "lnx.ln(lnx) - lnx + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int (x+2) e^{2x} dx$",
+                            "solution": "Xét $\\int (x + 2)e^{2x} dx$. Đặt $u = x + 2 \\Rightarrow du = dx$ và $dv = e^{2x} dx \\Rightarrow v = \\frac{1}{2}e^{2x}$. Khi đó $\\int (x + 2)e^{2x} dx = \\frac{1}{2} (x + 2)e^{2x} - \\int \\frac{1}{2} e^{2x} dx = \\frac{1}{2} (x + 2)e^{2x} - \\frac{1}{4} e^{2x} + C$. Vậy $\\int (x + 2)e^{2x} dx = \\frac{1}{4} (2x + 3)e^{2x} + C$",
+                            "answer": "\\frac{1}{4} (2x + 3)e^{2x} + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int (4x-1)ln(x+1) dx$",
+                            "solution": "Xét $\\int (4x - 1)ln(x + 1) dx$. Đặt $u = ln(x + 1) \\Rightarrow du = \\frac{1}{x+1} dx$ và $dv = (4x - 1)dx \\Rightarrow v = 2x^2 - x $. Khi đó $\\int (4x - 1)ln(x + 1) dx = (2x^2 - x)ln(x + 1) - \\int \\frac{2x^2 - x}{x+1} dx = (2x^2 - x)ln(x + 1) - \\int (2x - 3 + \\frac{3}{x+1}) dx = (2x^2 - x)ln(x + 1) - (x^2 - 3x + 3ln(x+1)) + C$.",
+                            "answer": "(2x^2 - x)ln(x + 1) - (x^2 - 3x + 3ln(x+1)) + C"
+                        },
+                        {
+                            "question": "Tìm họ nguyên hàm của hàm số $\\int x^2sin(1-3x)dx$",
+                            "solution": "Xét $I = \\int x^2sin(1-3x) dx$. Đặt $u = x^2 \\Rightarrow du = 2xdx$ và $dv = sin(1-3x) dx \\Rightarrow v = \\frac{1}{3}cos(1-3x)$. Khi đó $I = \\int x^2sin(1-3x) dx = - \\frac{1}{3}x^2cos(1-3x) - \\int \\frac{2}{3}xcos(1-3x) dx$. Xét $J = \\int \\frac{2}{3}xcos(1-3x) dx$ . Đặt $u = \\frac{2}{3}x \\Rightarrow du = \\frac{2}{3}dx$ và $dv = cos(1-3x) dx \\Rightarrow v = - \\frac{1}{3}sin(1-3x)$. Suy ra $J = \\int \\frac{2}{3}xcos(1-3x) dx = -\\frac{2}{9}xsin(1-3x) + \\int \\frac{2}{9}sin(1-3x) dx = -\\frac{2}{9}xsin(1-3x) - \\frac{2}{27}cos(1-3x) + C$. Vậy $I = \\int x^2sin(1-3x) dx = - \\frac{1}{3}x^2cos(1-3x) + \\frac{2}{9}xsin(1-3x) + \\frac{2}{27}cos(1-3x) + C$",
+                            "answer": "- \\frac{1}{3}x^2cos(1-3x) + \\frac{2}{9}xsin(1-3x) + \\frac{2}{27}cos(1-3x) + C"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tìm nguyên hàm của hàm số hữu tỉ",
+                    "general guide":"n tổng quát: Tính nguyên hàm $I = \\int \\frac{P(x)}{Q(x)} dx$ với $P(x)$ và $Q(x)$ là các đa thức không căn.\n\nPhương pháp giải:\n\nNếu bậc của tử số $P(x) \\geq$ bậc của mẫu số $Q(x)$ $ \\longrightarrow $ Chia đa thức.\n\nNếu bậc của tử số $P(x) <$ bậc của mẫu số $Q(x)$ $ \\longrightarrow $ Xem xét mẫu số và khi đó:\n\n+ Nếu mẫu số phân tích được thành tích số, ta sẽ sử dụng đồng nhất thức để đưa về dạng tổng của các phân số.\n\nMột số trường hợp đồng nhất thức thường gặp:\n\n$\\cdot \\frac{1}{(ax + m) \\cdot (bx + n)} = \\frac{1}{an - bm} \\cdot (\\frac{a}{ax + m} - \\frac{b}{bx + n})$\n\n$\\cdot \\frac{mx + n}{(x - a) \\cdot (x - b)} = \\frac{A}{x - a} + \\frac{B}{x - b} = \\frac{(A + B) \\cdot x - (Ab + Ba)}{(x - a) \\cdot (x - b)} \\Longrightarrow \\begin{cases} A + B = m \\\\ Ab + Ba = -n \\end{cases}$\n\n$\\cdot \\frac{1}{(x-m)(ax^2+bx+c)} = \\frac{A}{x-m} + \\frac{Bx+C}{ax^2+bx+c}$, với $\\Delta = b^2 - 4ac < 0$.\n\n$\\cdot \\frac{1}{(x-a)^2 \\cdot (x-b)^2} = \\frac{A}{x-a} + \\frac{B}{(x-a)^2} + \\frac{C}{x-b} + \\frac{D}{(x-b)^2}$\n\n+ Nếu mẫu số không phân tích được thành tích số (biến đổi và đưa về dạng lượng giác).",
+                    "questions":
+                    [
+                        {
+                            "question": "Tìm nguyên hàm F(x) của hàm số $f(x) = \\frac{1}{x^2 + x -2}$",
+                            "solution": "Ta có $f(x) = \\frac{1}{x^2 + x -2} = \\frac{1}{(x-1)(x+2)}$. Giả sử $\\frac{1}{(x-1)(x+2)} = \\frac{A}{x-1} + \\frac{B}{x+2}$. Đồng nhất hệ số ta có $\\begin{cases} A + B = 0 \\\\ 2A - B = 0 \\end{cases} \\Rightarrow \\begin{cases} A = \\frac{1}{3} \\\\ B = -\\frac{1}{3} \\end{cases}$. Khi đó $\\int \\frac{1}{x^2 + x -2}dx = \\frac{1}{3} \\int \\frac{1}{x-1}dx - \\frac{1}{3} \\int \\frac{1}{x+2}dx = \\frac{1}{3} ln |x-1| - \\frac{1}{3} ln |x+2| + C$",
+                            "answer": "\\frac{1}{3} ln |x-1| - \\frac{1}{3} ln |x+2| + C"
+                        },
+                        {
+                            "question": "Tìm nguyên hàm F(x) của hàm số $I = \\int \\frac{x^3-1}{x+1}dx$",
+                            "solution": "Ta có: $\\frac{x^3-1}{x+1} = x^2 - x + 1 - \\frac{2}{x+1}$. Suy ra $I = \\int (x^2 - x + 1 - \\frac{2}{x+1})dx = \\frac{x^3}{3} - \\frac{x^2}{2} + x - 2ln|x+1| + C$",
+                            "answer": "\\frac{x^3}{3} - \\frac{x^2}{2} + x - 2ln|x+1| + C"
+                        },
+                            {
+                            "question": "Tìm nguyên hàm F(x) của hàm số $f(x) = \\frac{1}{x^2 - 6x + 10}$",
+                            "solution": "$F(x) = \\int f(x) dx = \\int \\frac{1}{x^2 - 6x + 10} dx = \\int \\frac{1}{(x-3)^2 + 1} dx$. Đặt $x - 3 = tant \\Rightarrow dx = (tan^2t + 1)dt$. $F(x) = \\int \\frac{1}{tan^2t + 1} .(tan^2t + 1)dt = \\int dt + C = arctan(x-3) + C$",
+                            "answer": "arctan(x-3) + C"
+                        },
+                            {
+                            "question": "Tính nguyên hàm F(x) của hàm số $f(x) = \\frac{x+1}{x-1}$",
+                            "solution": "Ta có: $\\int \\frac{x+1}{x-1} dx = \\int (1 + \\frac{2}{x-1}) dx = x + 2ln|x-1| + C$",
+                            "answer": "x + 2ln|x-1| + C"
+                        },
+                        {
+                            "question": "Tính nguyên hàm F(x) của hàm số $\\int \\frac{3x+3}{-x^2 - x + 2} dx$",
+                            "solution": "$\\int \\frac{3x+3}{-x^2 - x + 2} dx = \\int \\frac{3x+3}{(1-x)(x+2)} dx = \\int (\\frac{2}{1-x} - \\frac{1}{x+2}) dx = -2ln|x-1| - ln|x + 2| + C$",
+                            "answer": "-2ln|x-1| - ln|x + 2| + C"
+                        },
+                            {
+                            "question": "Tính nguyên hàm F(x) của hàm số $\\int \\frac{1}{x^2-7x+6} dx$",
+                            "solution": "$\\int \\frac{1}{x^2-7x+6} dx = \\int \\frac{1}{(x-1)(x-6)} dx = \\frac{1}{5} \\int (\\frac{1}{x-6} - \\frac{1}{x-1}) dx = \\frac{1}{5}(ln|x-6| - ln|x-1|) + C = \\frac{1}{5}ln|\\frac{x-6}{x-1}| + C$",
+                            "answer": "\\frac{1}{5}ln|\\frac{x-6}{x-1}| + C"
+                        },
+                            {
+                            "question": "Tính nguyên hàm F(x) của hàm số $I = \\int \\frac{2x^2+x+1}{x-1} dx$",
+                            "solution": "Ta có: $\\frac{2x^2+x+1}{x-1} = 2x + 3 + \\frac{4}{x-1}$. Suy ra $I = \\int (2x + 3 + \\frac{4}{x-1}) dx = x^2 + 3x + 4ln|x-1| + C$",
+                            "answer": "x^2 + 3x + 4ln|x-1| + C"
+                        },
+                        {
+                            "question": "Tính nguyên hàm F(x) của hàm số $J = \\int \\frac{x^3+2x+1}{x^2+2x+1} dx$",
+                            "solution": "Ta có: $x^3 + 2x + 1 = (x+1)^3 - 3(x+1)^2 + 5(x+1) - 2$. Suy ra $I = \\int (x - 2 + \\frac{5}{x+1} - \\frac{2}{(x+1)^2}) dx = \\frac{x^2}{2} - 2x + 5ln|x+1| + \\frac{2}{x+1} + C$.",
+                            "answer": "\\frac{x^2}{2} - 2x + 5ln|x+1| + \\frac{2}{x+1} + C"
+                        },
+                            {
+                            "question": "Tính nguyên hàm F(x) của hàm số $K = \\int \\frac{2x^2+1}{(x+1)^5} dx$",
+                            "solution": "Ta phân tích $2x^2 + 1 = 2(x+1)^2 - 4(x+1) + 3$. Suy ra $K = \\int (\\frac{2}{(x+1)^3} - \\frac{4}{(x+1)^4} + \\frac{3}{(x+1)^5}) dx = - \\frac{1}{(x+1)^2} + \\frac{4}{3(x+1)^3} - \\frac{3}{4(x+1)^4} + C$.",
+                            "answer": "- \\frac{1}{(x+1)^2} + \\frac{4}{3(x+1)^3} - \\frac{3}{4(x+1)^4} + C"
+                        },
+                            {
+                            "question": "Tính nguyên hàm F(x) của hàm số $J = \\int \\frac{dx}{x(x^6+1)^2}$",
+                            "solution": "Đặt $t = x^6 \\Rightarrow I = \\frac{1}{6} \\int \\frac{dt}{t(t+1)^2} = \\frac{1}{6} (\\frac{1}{t} - \\frac{1}{t+1} - \\frac{1}{(t+1)^2}) dt$. Suy ra $I = \\frac{1}{6}ln |\\frac{t}{x^6+1}| + \\frac{1}{x^6+1} + C$.",
+                            "answer": "\\frac{1}{6}ln |\\frac{t}{x^6+1}| + \\frac{1}{x^6+1} + C"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tìm nguyên hàm thỏa mãn điều kiện cho trước",
+                    "general guide":"* Bước 1: Tìm nguyên hàm dựa vào những phương pháp đã biết:\n    * Sử dụng bảng nguyên hàm.\n    * Đổi biến số\n    * Nguyên hàm từng phần\n    * ...\n* Bước 2: Dựa vào yêu cầu của n tìm ra hằng số C tương ứng.\n* Bước 3: Kết luận một nguyên hàm vừa tìm được.",
+                    "questions":
+                    [
+                        {
+                            "question": "Tìm một nguyên hàm F(x) của hàm số $f(x) = (4x+1)e^x$ thỏa mãn điều kiện F(1) = e.",
+                            "solution": "$\\int (4x+1)e^x dx = (4x+1)e^x - \\int 4e^x dx = (4x+1)e^x - 4e^x + C = (4x-3)e^x + C$. $F(1) = e \\Rightarrow C = 0$ nên $F(x) = (4x-3)e^x$",
+                            "answer": "(4x-3)e^x"
+                        },
+                        {
+                            "question": "Nếu F(x) là một nguyên hàm của hàm số $f(x) = \\frac{1}{x-1}$ và F(2)=1. Tính F(3)",
+                            "solution": "$\\int \\frac{1}{x-1} dx = \\int \\frac{dx}{x-1} = ln|x-1| + C$. Vì F(2)=1 nên C =1. Suy ra $F(x) = ln|x-1| + 1$, từ đó F(3) = 1 + ln2",
+                            "answer": "1 + ln2"
+                        },
+                        {
+                            "question": "Biết F(x) là một nguyên hàm của hàm số f(x)=xsin2x và thỏa F(0) + F(\\pi) = -$\\frac{\\pi}{2}$. Tính F(\\frac{\\pi}{4})",
+                            "solution": "Đặt $\\begin{cases} u = x \\\\ dv = sin2xdx \\end{cases} \\Rightarrow \\begin{cases} du = dx \\\\ v = -\\frac{1}{2} cos2x \\end{cases}$. Khi đó $\\int xsin2x dx = -\\frac{x}{2}cos2x + \\int \\frac{1}{2} cos2x dx = -\\frac{1}{2}xcos2x + \\frac{1}{4}sin2x + C$. Vậy $F(x) = -\\frac{1}{2}xcos2x + \\frac{1}{4}sin2x + C$. Ta có $F(0) + F(\\pi) = C + -\\frac{\\pi}{2} + C = -\\frac{\\pi}{2} + 2C$. Mà $F(0) + F(\\pi) = -\\frac{\\pi}{2}$ nên C = 0. Vậy $F(\\frac{\\pi}{4}) = \\frac{1}{4}$",
+                            "answer": "\\frac{1}{4}"
+                        },
+                        {
+                            "question": "Tìm một nguyên hàm F(x) của hàm số f(x) = $sin^2\\frac{x}{2}$ biết $F(\\frac{\\pi}{2}) = \\frac{\\pi}{4}$",
+                            "solution": "Ta có $F(x) = \\int sin^2\\frac{x}{2} dx = \\frac{1}{2} \\int (1 - cosx) dx = \\frac{x}{2} - \\frac{1}{2}sinx + C$. Ngoài ra, $F(\\frac{\\pi}{2}) = \\frac{\\pi}{4} => \\frac{\\pi}{4} - \\frac{1}{2}sin\\frac{\\pi}{2} + C = \\frac{\\pi}{4} \\Rightarrow C = \\frac{1}{2}$. Từ đó $F(x) = \\frac{x}{2} - \\frac{sinx}{2} + \\frac{1}{2}$",
+                            "answer": "\\frac{x}{2} - \\frac{sinx}{2} + \\frac{1}{2}"
+                        },
+                        {
+                            "question": "Tìm một nguyên hàm F(x) của hàm số f(x) với $f(x) = 2x + \\frac{1}{sin^2x}$ thỏa mãn $F(\\frac{\\pi}{4}) = -1$",
+                            "solution": "Ta có $F(x) = \\int (2x + \\frac{1}{sin^2x}) dx = x^2 - cotx + C$. Do $F(\\frac{\\pi}{4}) = -1$ nên C = $\\frac{\\pi^2}{16}$. Từ đó $F(x) = -cotx + x^2 - \\frac{\\pi^2}{16}$",
+                            "answer": "-cotx + x^2 - \\frac{\\pi^2}{16}"
+                        },
+                        {
+                            "question": "Biết F(x) là một nguyên hàm của hàm số y = $\\frac{lnx}{x}$ và F($e^2$) = 4. Tính F(e)",
+                            "solution": "Ta có $\\int \\frac{lnx}{x} dx$. Đặt $t = lnx \\Rightarrow dt = \\frac{1}{x} dx$. Ta được $\\int \\frac{lnx}{x} dx = \\int t dt = \\frac{t^2}{2} + C = \\frac{ln^2x}{2} + C$. Mà $F(e^2) = 4 \\Rightarrow C = 2$ . Vậy $F(x) = \\frac{ln^2x}{2} + 2$.$\\Rightarrow F(e) = \\frac{5}{2}$",
+                            "answer": "F(e) = \\frac{5}{2}"
+                        },
+                        {
+                            "question": "Tìm một nguyên hàm F(x) của hàm số f(x) với $f(x) = ax + \\frac{b}{x^2} (x \\neq 0)$, biết rằng F(-1) = 1, F(1) = 4, f(1) = 0",
+                            "solution": "Ta có $F(x) = \\int f(x) dx = \\int (ax + \\frac{b}{x^2} dx = \\frac{a}{2}x^2 - \\frac{b}{x} + C$. Ta có $F(-1) = 1, F(1) = 4, f(1) = 0 => \\begin{cases} \\frac{a}{2} + b + c = 1 \\\\ \\frac{a}{2} - b + c = 4 \\\\ a + b = 0 \\end{cases} <=> \\begin{cases} a = \\frac{3}{2} \\\\ b = -\\frac{3}{2} \\\\ c = \\frac{7}{4} \\end{cases}$. Vậy $F(x) = \\frac{3x^2}{4} + \\frac{3}{2x} + \\frac{7}{4}$",
+                            "answer": "\\frac{3x^2}{4} + \\frac{3}{2x} + \\frac{7}{4}"
+                        },
+                        {
+                            "question": "Cho hàm số $f(x) = \\frac{4m}{\\pi} + sin^2x$. Xác định giá trị của tham số để nguyên hàm F(x) của hàm số f(x) thỏa mãn điều kiện F(0)=1 và F($\\frac{\\pi}{4}$) = $\\frac{\\pi}{8}$",
+                            "solution": "Ta có $\\int (\\frac{4m}{\\pi} + sin^2x) dx = \\frac{4m}{\\pi}x + \\int sin^2xdx = \\frac{4m}{\\pi}x - \\frac{1}{2}x - \\frac{1}{4}sin2x + C$. F(0) = 1 $\\Rightarrow$ Giải hệ $\\begin{cases} F(0) = 1 \\\\ F(\\frac{\\pi}{4}) = \\frac{\\pi}{8} \\end{cases} \\Rightarrow \\begin{cases} C = 1 \\\\ m = -\\frac{3}{4} \\end{cases}$",
+                            "answer": "C = 1, m = -3/4"
+                        },
+                        {
+                            "question": "Tìm hàm số F(x), biết F(x) là một nguyên hàm của hàm số f(x) =$\\sqrt{x}$ và F(1)=1.",
+                            "solution": "Ta có $\\int \\sqrt{x} dx = \\int x^{\\frac{1}{2}} dx = \\frac{2x\\sqrt{x}}{3} + C$. Do F(1) = 1 $\\Rightarrow C + \\frac{2}{3} = 1 <=> C = \\frac{1}{3}$. Nên $F(x) = \\frac{2}{3}x\\sqrt{x} + \\frac{1}{3}$",
+                            "answer": "\\frac{2}{3}x\\sqrt{x} + \\frac{1}{3}"
+                        },
+                        {
+                            "question": "Cho F(x) là một nguyên hàm của hàm số $f(x) = \\frac{sin2x}{1+cosx}$ thỏa mãn F($\\frac{\\pi}{2}$)=0. Tính F(0)",
+                            "solution": "Ta có $\\frac{sin2x}{1+cosx} = \\frac{2sinx.cosx}{1+cosx}$. Đặt u = 1 + cosx => du = -sinxdx. Ta có $\\int \\frac{2sin2x}{1+cosx} dx = \\int \\frac{-2(u-1)}{u} du = = 2lnu - 2u + C = 2ln(1 + cosx) - 2(1 + cosx) + C$. F($\\frac{\\pi}{2}$) = 0 $\\Rightarrow 2ln(1 + cos$\\frac{\\pi}{2}$) - 2(1 + cos$\\frac{\\pi}{2}$) + C = 0 => C = 2 => F(x) = 2ln(1 + cosx) - 2cosx -2",
+                            "answer": "F(0) = 2ln(2)-2"
+                        },
+                            {
+                            "question": "Cho F(x) là một nguyên hàm của hàm số f(x)=$xe^{-x}$, thỏa mãn điều kiện F(0)=-1. Tính tổng S các nghiệm của phương trình F(x)+F'(x)+1=0.",
+                            "solution": "Đặt $\\begin{cases} u = x \\\\ dv = e^{-x}dx \\end{cases} \\Rightarrow du = dx$ và $v = -e^{-x}$. Khi đó $F(x) = -xe^{-x} + \\int e^{-x} dx = -xe^{-x} - e^{-x} + C$. Vì F( 0) = -1$\\Rightarrow -1 = -1 + C$. Nên C = 0$\\Rightarrow F(x) = -xe^{-x} - e^{-x}$. Phương trình F(x) + x + 1 =0 => $-xe^{-x} - e^{-x} + x + 1 = 0$ => -e^{-x}(x + 1) + (x + 1) = 0 => $(x+1)(e^{-x} - 1) = 0$. $ \\begin{bmatrix} x = -1\\\\ e^{-x} = 1 \\end{bmatrix} => \\begin{bmatrix} x = -1\\\\ x = 0 \\end{bmatrix}$. Vậy S = -1 + 0 = -1",
+                            "answer": "-1"
+                        },
+                        {
+                            "question": "Tìm nguyên hàm F(x) của hàm số  f(x) = $\\frac{sin2x}{sin^2x+3}$ thỏa mãn F(0)=0",
+                            "solution": "Đặt $t = sin^2x + 3 \\Rightarrow dt = 2sin x cosx dx$. Khi đó $\\int \\frac{sin2x}{sin^2x+3} dx = \\int \\frac{dt}{t} = ln|t| + C = ln|sin^2x + 3| + C$. Vì F(0) = 0 nên $C= -ln3$. Như vậy $F(x) = ln|sin^2x + 3| - ln3 = ln|1 + \\frac{sin^2x}{3}|",
+                            "answer": "ln|1 + \\frac{sin^2x}{3}|"
+                        },
+                        {
+                            "question": " Cho F(x) là một nguyên hàm của hàm số f(x) = $\\frac{1}{e^x+1}$ thỏa mãn F(0) = -ln2. Tìm tập nghiệm S của phương trình F(x)+ln($e^x$+1) = 3",
+                            "solution": "Ta có $\\int \\frac{1}{e^x+1} dx$. Đặt $t = e^x + 1 \\Rightarrow e^x = t-1 \\Rightarrow dt = e^x dx$. Ta được $\\int \\frac{1}{e^x+1} dx = \\int \\frac{dt}{e^x(e^x+1)}dx = \\int \\frac{dt}{(t-1)t} dt =  \\int (\\frac{1}{t-1} - \\frac{1}{t})dt = ln|t-1| - ln|t| + C = ln|\\frac{e^x}{e^x+1}| + C$. Mà F(0) = -ln2 => C = 0 => $F(x) = ln|\\frac{e^x}{e^x+1}|$. Theo ) + ln($e^x$+1) = 3 => ln$\\frac{e^x}{e^x+1}$ + ln($e^x$+1) = 3 => lne^x = 3 => x = 3",
+                            "answer": "x=3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter":"Tích phân",
+            "topics":
+            [
+                {
+                    "topic":"Tính tích phân theo định nghĩa và tính chất",
+                    "general guide":"Để tính tích phân từ a đến b, ta tiến hành tìm nguyên hàm dựa vào bảng nguyên hàm rồi sau đó thay cận vào theo công thức $\\int_a^b f(x) dx = F(b) - F(a)$.",
+                    "questions":
+                    [
+                        {
+                            "question": "Tính tích phân $I = \\int_{-1}^{1}(x^3 + 3x + 2)dx$",
+                            "solution": "Ta có $I = \\int_{-1}^{1}(x^3 + 3x + 2)dx = (\\frac{x^4}{4} + \\frac{3}{2}x^2 + 2x)|_{-1}^{1} = 4$",
+                            "answer": "4"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{1}^{2}(\\frac{1}{x^2} + 2x) dx$",
+                            "solution": "Ta có $I = \\int_{1}^{2}(\\frac{1}{x^2} + 2x) dx = (-\\frac{1}{x} + x^2)|_{1}^{2} = \\frac{7}{2}$",
+                            "answer": "\\frac{7}{2}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{\\frac{\\pi}{2}}^{\\pi}(sin2x - cos3x)dx$",
+                            "solution": "Ta có $I = \\int_{\\frac{\\pi}{2}}^{\\pi}(sin2x - cos3x)dx = (-\\frac{1}{2}cos2x - \\frac{1}{3} sin3x)|_{\\frac{\\pi}{2}}^{\\pi} = -\\frac{3}{4}$",
+                            "answer": "-\\frac{3}{4}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{x}{4-x^2} dx$",
+                            "solution": "Ta có $I = \\int_{0}^{1} \\frac{x}{4-x^2} dx = - \\frac{1}{2} \\int_{0}^{1} \\frac{d(4-x^2)}{4-x^2} = - \\frac{1}{2} (ln|4-x^2|)|_{0}^{1} = - \\frac{1}{2}ln\\frac{3}{4}$",
+                            "answer": "- \\frac{1}{2}ln\\frac{3}{4}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{dx}{(1+x)^3}$",
+                            "solution": "Ta có $I = \\int_{0}^{1} \\frac{dx}{(1+x)^3} = \\int_{0}^{1} \\frac{d(1+x)}{(1+x)^3} = (\\frac{-1}{2(1+x)^2})|_{0}^{1} = \\frac{3}{8}$",
+                            "answer": "\\frac{3}{8}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{x-2}{x^2-4x+5} dx$",
+                            "solution": "Ta có $I = \\int_{0}^{1} \\frac{x-2}{x^2-4x+5} dx = \\frac{1}{2} \\int_{0}^{1} \\frac{d(x^2-4x+5)}{x^2-4x+5} = \\frac{1}{2} (ln|x^2-4x+5|)|_{0}^{1} = \\frac{1}{2}(ln 2 - ln 5) = \\frac{1}{2}ln\\frac{2}{5}$",
+                            "answer": "\\frac{1}{2}ln\\frac{2}{5}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{-1}^{0} \\frac{dx}{(2x-1)^2}$",
+                            "solution": "Ta có $I = \\int_{-1}^{0} \\frac{dx}{(2x-1)^2} = \\frac{1}{2} \\int_{-1}^{0} \\frac{d(2x-1)}{(2x-1)^2} = \\frac{1}{2} \\frac{-1}{2x-1}|_{-1}^{0} = \\frac{1}{2} - \\frac{1}{6} = \\frac{1}{3}$",
+                            "answer": "\\frac{1}{3}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{e^x}{e^x+1} dx$",
+                            "solution": "Ta có $I = \\int_{0}^{1} \\frac{e^x}{e^x+1} dx = \\int_{0}^{1} \\frac{d(e^x+1)}{e^x+1} = ln|e^x + 1||_{0}^{1} = ln(e+1) - ln2 = ln\\frac{e+1}{2}$",
+                            "answer": "ln\\frac{e+1}{2}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{\\frac{\\pi}{2}} sin^2xcosxdx$",
+                            "solution": "Ta có $I = \\int_{0}^{\\frac{\\pi}{2}} sin^2xcosxdx = \\int_{0}^{\\frac{\\pi}{2}} sin^2x d(sinx) = \\frac{sin^3x}{3}|_{0}^{\\frac{\\pi}{2}} = \\frac{1}{3}$",
+                            "answer": "\\frac{1}{3}"
+                        },
+                        {
+                            "question": " Tính tích phân $I = \\int_{0}^{\\frac{\\pi}{4}} \\frac{sinx}{cosx} dx$",
+                            "solution": "Ta có $I = \\int_{0}^{\\frac{\\pi}{4}} \\frac{sinx}{cosx} dx = - \\int_{0}^{\\frac{\\pi}{4}} \\frac{d(cosx)}{cosx} = - ln(cosx)|_{0}^{\\frac{\\pi}{4}} = - ln\\frac{\\sqrt{2}}{2} + ln 1 = -ln \\frac{\\sqrt{2}}{2}$",
+                            "answer": "-ln \\frac{\\sqrt{2}}{2}"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tính tích phân từng phần",
+                    "general guide":"Định lí: Nếu $u = u(x)$ và $v = v(x)$ là hai hàm số có đạo hàm và liên tục trên đoạn $[a;b]$ thì $\\int_a^b u(x)v'(x)dx = (u(x)v(x))\\big|_a^b - \\int_a^b u'(x)v(x)dx$, hay viết gọn là $\\int_a^b udv = uv\\big|_a^b - \\int_a^b vdu$.\nCác dạng cơ bản: Giả sử cần tính $I = \\int_a^b P(x).Q(x)dx$\n\nDạng hàm | $P(x)$: Đa thức, $Q(x)$: $\\sin(kx)$ hay $\\cos(kx)$ | $P(x)$: Đa thức, $Q(x)$: $e^{kx}$ | $P(x)$: Đa thức, $Q(x)$: $\\ln(ax+b)$ | $P(x)$: Đa thức, $Q(x)$: $\\frac{1}{\\sin^2x}$ hay $\\frac{1}{\\cos^2x}$ \n---|---|---|---\nCách đặt | * $u = P(x)$, * $dv$ là Phần còn lại của biểu thức dưới dấu tích phân | * $u = P(x)$, * $dv$ là Phần còn lại của biểu thức dưới dấu tích phân | * $u = \\ln(ax+b)$, * $dv = P(x)dx$ | * $u = P(x)$, * $dv$ là Phần còn lại của biểu thức dưới dấu tích phân\n\nThông thường nên chú ý: \"Nhất log, nhì đa, tam lượng, tứ mũ\".",
+                    "questions":
+                    [
+                        {
+                            "question": "Tính tích phân sau $I = \\int_{0}^{\\frac{\\pi}{2}}(x + sin^2x)cosxdx$",
+                            "solution": "$\\int_{0}^{\\frac{\\pi}{2}}xcosxdx + \\int_{0}^{\\frac{\\pi}{2}}sin^2xcosxdx = I_1 + I_2$. Đặt $\\begin{cases} u = x \\\\ dv = cosxdx \\end{cases} \\Rightarrow \\begin{cases} du = dx \\\\ v = sinx \\end{cases} \\Rightarrow I_1 = xsinx|_{0}^{\\frac{\\pi}{2}} - \\int_{0}^{\\frac{\\pi}{2}}sinxdx = \\frac{\\pi}{2} + cosx|_{0}^{\\frac{\\pi}{2}} = \\frac{\\pi}{2} - 1$. $I_2 = \\int_{0}^{\\frac{\\pi}{2}}sin^2xd(sinx) = \\frac{sin^3x}{3}|_{0}^{\\frac{\\pi}{2}} = \\frac{1}{3}$. Vậy $I = \\frac{\\pi}{2} - \\frac{2}{3}$",
+                            "answer": "\\frac{\\pi}{2} - \\frac{2}{3}"
+                        },
+                        {
+                            "question": "Tính tích phân sau $I = \\int_{1}^{2}(4x + 3). lnxdx$",
+                            "solution": "Đặt $\\begin{cases} u = lnx \\\\ dv = (4x + 3)dx \\end{cases} \\Rightarrow \\begin{cases} du = \\frac{1}{x} dx \\\\ v = 2x^2 + 3x \\end{cases}$. Khi đó: $I = (2x^2 + 3x)lnx|_{1}^{2} - \\int_{1}^{2} \\frac{2x^2 + 3x}{x} dx = 14ln2 - 0 - \\int_{1}^{2} 2x + 3 dx = 14ln2 - 0 - (x^2 + 3x)|_{1}^{2} = 14ln2 - 0 - [(2^2 + 3.2) - (1^2 + 3.1)] = 14ln2 - (10 - 4) = 14ln2 - 6$.",
+                            "answer": "14ln2 - 6"
+                        },
+                        {
+                            "question": "Tính tích phân sau $I = \\int_{0}^{\\frac{\\pi}{2}} x(2 + sin2x)dx$",
+                            "solution": "Ta có: $I = \\int_{0}^{\\frac{\\pi}{2}} 2xdx + \\int_{0}^{\\frac{\\pi}{2}} xsin2xdx = x^2|_{0}^{\\frac{\\pi}{2}} + \\int_{0}^{\\frac{\\pi}{2}} xsin2xdx = \\frac{\\pi^2}{4} + \\int_{0}^{\\frac{\\pi}{2}} xsin2xdx$. Tính $J = \\int_{0}^{\\frac{\\pi}{2}} xsin2xdx$. Đặt $\\begin{cases} u = x \\\\ dv = sin2xdx \\end{cases} \\Rightarrow \\begin{cases} du = dx \\\\ v = -\\frac{1}{2}cos2x \\end{cases} $. $J = -\\frac{1}{2}xcos2x|_{0}^{\\frac{\\pi}{2}} + \\frac{1}{2} \\int_{0}^{\\frac{\\pi}{2}} cos2x. dx = \\frac{\\pi}{4} + \\frac{1}{4} sin2x|_{0}^{\\frac{\\pi}{2}} = \\frac{\\pi}{4}$. Vậy $I = \\frac{\\pi^2}{4} + \\frac{\\pi}{4}$",
+                            "answer": "\\frac{\\pi^2}{4} + \\frac{\\pi}{4}"
+                        },
+                        {
+                            "question": "Tính tích phân sau $I = \\int_{2}^{3} x[3x - 2ln(x - 1)]dx$",
+                            "solution": "$I = \\int_{2}^{3} 3x^2dx - \\int_{2}^{3} 2xln(x - 1)dx = x^3|_{2}^{3} - I_1 = 19 - I_1$. $I_1 = \\int_{2}^{3} 2xln(x - 1)dx$. Đặt $\\begin{cases} u = ln(x - 1) \\\\ dv = 2xdx \\end{cases}$, suy ra  $I_1 = x^2ln(x-1)|_{2}^{3} - \\int_{2}^{3} x^2 d(ln(x - 1)) = 9ln2 - \\int_{2}^{3} (x + 1 + \\frac{1}{x-1}) dx = 9ln2 - (\\frac{x^2}{2} + x + ln|x-1|)|_{2}^{3} = 8ln2 - \\frac{7}{2}$. Vậy $I = \\frac{45}{2} - 8ln2$",
+                            "answer": "\\frac{45}{2} - 8ln2"
+                        },
+                        {
+                            "question": "Tính tích phân sau $I = \\int_{0}^{1} x(\\sqrt{x^2+1} + e^x)dx$",
+                            "solution": "Có $I = \\int_{0}^{1} x\\sqrt{x^2+1} + 1dx + \\int_{0}^{1} xe^x dx = I_1 + I_2$. Đặt $t = \\sqrt{x^2+1} \\Rightarrow t^2 = x^2 + 1 \\Rightarrow tdt = xdx$. Vậy $I = \\frac{2\\sqrt{2} - 1}{3}$",
+                            "answer": "\\frac{2\\sqrt{2} - 1}{3}"
+                        },
+                        {
+                            "question": "Tính tích phân sau $I = \\int_{0}^{\\pi} (x + cos^5x)sinxdx$",
+                            "solution": "Ta có $I = \\int_{0}^{\\pi} xsinxdx + \\int_{0}^{\\pi} cos^5x.sinxdx$. Đặt $\\begin{cases} u = x \\\\ dv = sinx. dx \\end{cases}$. Khi đó: $\\int_{0}^{\\pi} xsinxdx = (-xcosx)|_{0}^{\\pi} + \\int_{0}^{\\pi} cosxdx = 0 + (sinx)|_{0}^{\\pi} = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": " Tính tích phân sau $I = \\int_{1}^{e} (\\frac{1}{x} + \\frac{1}{x^2}) lnxdx$",
+                            "solution": "Đặt $t = cosx \\Rightarrow dt = -sinxdx$. Khi đó $\\int_{0}^{\\pi} sinx.cos^5xdx = \\int_{1}^{0} -t^5dt = (\\frac{t^6}{6})|_{0}^{1} = \\frac{1}{6}$. Vậy $I = 1 + \\frac{1}{6} = \\frac{7}{6}$.",
+                            "answer": "\\frac{3e - 4}{2e}"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tính tích phân bằng phương pháp đổi biến số loại 1",
+                    "general guide":"Key to Substitution Techniques:\n\n$\\bullet$ Theorem: If $f$ is continuous on $[a,b]$ and $u(x)$ is continuously differentiable with $\\alpha \\leq u(x) \\leq \\beta$, then:\n  $\\int_a^b f(x) dx = \\int_{u(a)}^{u(b)} g(u) du$, where $f(x) = g(u(x))u'(x)$.\n\n$\\bullet$ Recognition Hints (and Suggested Substitutions):\n  1.  Presence of $\\sqrt{f(x)}$ $\\implies$  Try $t = \\sqrt{f(x)}$\n  2.  Presence of $(ax + b)^n$ $\\implies$ Try $t = ax + b$\n  3.  Presence of $e^{f(x)}$ $\\implies$ Try $t = f(x)$\n  4.  Presence of $\\frac{dx}{x}$ and $\\ln x$ $\\implies$ Try $t = \\ln x$\n  5.  Presence of $e^x dx$ $\\implies$ Try $t = e^x$\n  6.  Presence of $\\sin x dx$ $\\implies$ Try $t = \\cos x$\n  7.  Presence of $\\cos x dx$ $\\implies$ Try $t = \\sin x$\n  8.  Presence of $\\frac{dx}{\\cos^2x}$ $\\implies$ Try $t = \\tan x$\n  9.  Presence of $\\frac{dx}{\\sin^2x}$ $\\implies$ Try $t = \\cot x$",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} x^5(1 - x^3)^6 dx$",
+                            "solution": "Đặt $t = 1 - x^3 => dt = -3x^2 dx$. Đổi cận $\\begin{cases} x = 1 \\\\ x = 0 \\end{cases} \\Rightarrow \\begin{cases} t = 0 \\\\ t = 1 \\end{cases}$. I = -$\\frac{1}{3} \\int_{1}^{0} t^6 (1 - t) dt = \\frac{1}{3} \\int_{0}^{1} (t^6 - t^7) dt = \\frac{1}{3} (\\frac{t^7}{7} - \\frac{t^8}{8}) = \\frac{1}{168}$",
+                            "answer": "\\frac{1}{168}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{-1}^{0} x^2(x + 1)^9 dx$",
+                            "solution": "Đặt $t = x + 1 => dt = dx$. Đổi cận $\\begin{cases} x = -1 \\\\ x = 0 \\end{cases} \\Rightarrow \\begin{cases} t = 0 \\\\ t = 1 \\end{cases}$. Khi đó $I = \\int_{-1}^{0} x^2(x + 1)^9 dx = \\int_{0}^{1} (t - 1)^2t^9 dt = \\int_{0}^{1} (t^{11} - 2t^{10} + t^9) dt = (\\frac{t^{12}}{12} - \\frac{2t^{11}}{11} + \\frac{t^{10}}{10})|_{0}^{1} = \\frac{1}{12} - \\frac{2}{11} + \\frac{1}{10} = \\frac{1}{660}$",
+                            "answer": "\\frac{1}{660}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} (1 + 3x)(1 + 2x + 3x^2)^{10} dx$",
+                            "solution": "Đặt $t = 1 + 2x + 3x^2$ => dt = (2 + 6x)dx => dt = 2(1 + 3x)dx => $\\frac{dt}{2} = (1 + 3x)dx$. Đổi cận $\\begin{cases} x = 0 \\\\ x = 1 \\end{cases} => \\begin{cases} t = 1 \\\\ t = 6 \\end{cases}$. $I = \\int_{1}^{6} t^{10} \\frac{dt}{2} = \\frac{1}{2} \\int_{1}^{6} t^{10} dt = \\frac{1}{2} \\frac{t^{11}}{11}|_{1}^{6} = \\frac{6^{11}}{22} - \\frac{1}{22}$",
+                            "answer": "\\frac{6^{11}}{22} - \\frac{1}{22}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{2}^{\\sqrt{7}} \\frac{x}{\\sqrt{x^2-3}} dx$",
+                            "solution": "Đặt $t = \\sqrt{x^2 - 3} => t^2 = x^2 - 3$. => tdt = xdx. Đổi cận $\\begin{cases} x = 2 \\\\ x = \\sqrt{7} \\end{cases} => \\begin{cases} t = 1 \\\\ t = 2 \\end{cases}$. Ta được $I = \\int_{1}^{2} t dt = \\int_{1}^{2} dt^2 = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{1}^{e} \\frac{1}{x(1+lnx)} dx$",
+                            "solution": "Đặt $t = 1 + lnx => dt = \\frac{dx}{x}$. Đổi cận $\\begin{cases} x = 1 \\\\ x = e \\end{cases} => \\begin{cases} t = 1 \\\\ t = 2 \\end{cases}$. Khi đó $I = \\int_{1}^{e} \\frac{1}{x(1+lnx)} dx = \\int_{1}^{2} \\frac{dt}{t} = ln|t||_{1}^{2} = ln2$",
+                            "answer": "ln2"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{1}^{e} \\frac{sin(lnx)}{x} dx$",
+                            "solution": "Đặt $t = lnx => dt = \\frac{dx}{x}$. Đổi cận $\\begin{cases} x = 1 \\\\ x = e \\end{cases} => \\begin{cases} t = 0 \\\\ t = 1 \\end{cases}$. Khi đó $I = \\int_{1}^{e} sin(lnx) dx = \\int_{0}^{1} sint dt = -cost|_{0}^{1} = -cos1 + cos0 = 1 - cos1$",
+                            "answer": "1 - cos1"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{e}^{e^2} \\frac{ln^2x}{xln^5x} dx$",
+                            "solution": "Đặt $t = lnx => dt = \\frac{dx}{x}$. Đổi cận $\\begin{cases} x = e \\\\ x = e^2 \\end{cases} => \\begin{cases} t = 1 \\\\ t = 2 \\end{cases}$. Khi đó $I = \\int_{e}^{e^2} \\frac{ln^2x}{xln^5x} dx = \\int_{1}^{2} \\frac{dt}{t^5} = ( -\\frac{1}{4t^4})|_{1}^{2} = \\frac{15}{64}$",
+                            "answer": "\\frac{15}{64}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}} \\frac{1 + sinx}{cos^2x} dx$",
+                            "solution": "I = $\\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}} \\frac{1}{cos^2x} dx + \\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}} \\frac{sinx}{cos^2x} dx = I_1 + I_2$.  $I_1 = \\int_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}} \\frac{1}{cos^2x} dx = tanx|_{\\frac{\\pi}{3}}^{\\frac{\\pi}{2}} = \\sqrt{3}$. Đặt $t= cosx => dt = -sinxdx$. Suy ra $I_2 = \\int_{\\frac{1}{2}}^{0} \\frac{-1}{t^2} dt$",
+                            "answer": "$\\sqrt{3}$ + 1"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tính tích phân bằng phương pháp đổi biến số loại 2",
+                    "general guide":"Key to Trigonometric Substitutions for Integrals:\n\n$\\bullet$ Theorem: For a continuous function $f$ on $[a,b]$, and a continuously differentiable $u(x)=\\varphi(t)$ on $[a,b]$ with $\\alpha \\leq u(x) \\leq \\beta$, we have:\n  $\\int_a^b f(x)dx = \\int_{\\varphi^{-1}(a)}^{\\varphi^{-1}(b)} f(\\varphi(t))\\varphi'(t)dt$.\n\n$\\bullet$ Common Substitution Methods (when the expression under the integral sign has the form):\n  1.  $\\sqrt{a^2 - x^2}$: Let $x = |a|\\sin t$, $t \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$\n  2.  $\\sqrt{x^2 - a^2}$: Let $x = \\frac{|a|}{\\sin t}$, $t \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}] \\setminus \\{0\\}$\n  3.  $\\sqrt{x^2 + a^2}$: Let $x = |a|\\tan t$, $t \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$\n  4.  $\\sqrt{\\frac{a+x}{a-x}}$ or $\\sqrt{\\frac{a-x}{a+x}}$: Let $x = a.\\cos 2t$\n\n$\\bullet$ Note: These substitutions (1, 2, 3) are especially useful when $x$ appears to an even power.  For example, to compute $I = \\int_0^{\\sqrt{3}} \\frac{x^2 dx}{\\sqrt{x^2+1}}$, one would apply substitution type 2. For $I = \\int_0^{\\sqrt{3}} \\frac{x^3 dx}{\\sqrt{x^2+1}}$ you apply substitution type 1.",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tính tích phân $I = \\int_{1}^{2} x^2 \\sqrt{4 - x^2} dx$",
+                            "solution": "Đặt x = 2sint, t ∈ [-\\frac{\\pi}{2};\\frac{\\pi}{2}], ta có dx = 2costdt. Đổi cận: x = 1 => t = \\frac{\\pi}{6} , x = 2 => t = \\frac{\\pi}{2}. Ta có $\\sqrt{4 - x^2} = \\sqrt{4 - sin^2t} = 2\\sqrt{cos^2t} = 2|cost| = 2cost$. Khi đó: $I = \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} 4sin^2t. 2cost. 2costdt = 16 \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} sin^2t dt = 2 (t - \\frac{sin4t}{4})|_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} = \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4}$",
+                            "answer": "\\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{1}^{\\frac{2}{\\sqrt{3}}} \\frac{dx}{\\sqrt{x^2 - 1}}$",
+                            "solution": "Đặt $x = \\frac{1}{sint}, t \\in [-\\frac{\\pi}{2};\\frac{\\pi}{2}]$, => $dx = \\frac{-cost}{sin^2t} dt$. Đổi cận: $x = 1 => t = \\frac{\\pi}{2}$. Ta có: $I = \\int_{1}^{\\frac{2}{\\sqrt{3}}} \\frac{dx}{\\sqrt{x^2 - 1}} = \\int_{\\frac{\\pi}{2}}^{\\frac{\\pi}{3}} \\frac{\\frac{-cost}{sin^2t}}{\\frac{cost}{sint}} dt = \\int_{\\frac{\\pi}{2}}^{\\frac{\\pi}{3}} \\frac{dt}{sint}$. Ta có 2 cách sau. Cách 1 : $I = \\int_{\\frac{\\pi}{2}}^{\\frac{\\pi}{3}} \\frac{dt}{sin^2 \\frac{t}{2} cos^2 \\frac{t}{2}} = ln \\sqrt{3}$",
+                            "answer": "ln \\sqrt{3}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{1}{1+x^2} dx$",
+                            "solution": "Đặt x = tant, t ∈ [-\\frac{\\pi}{2};\\frac{\\pi}{2}]. Ta có: dx =$\\frac{1}{cos^2t}$ dt = (1 + tan^2t)dt. Đổi cận: x = 0 => t = 0, x = 1 => t = $\\frac{\\pi}{4}$. Khi đó: $I = \\int_{0}^{\\frac{\\pi}{4}} \\frac{1}{1+tan^2t} (1 + tan^2t) dt = \\int_{0}^{\\frac{\\pi}{4}} dt = \\frac{\\pi}{4}$",
+                            "answer": "\\frac{\\pi}{4}"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{3} x^2\\sqrt{9 - x^2} dx$",
+                            "solution": "Đặt x = 3sin t, -$\\frac{\\pi}{2}$ ≤ t ≤$\\frac{\\pi}{2}$ => dx = 3costdt. Đổi cận x = 0 => t = 0 , x = 3 => t = $\\frac{\\pi}{2}$. Ta có : $\\sqrt{9 - x^2} = \\sqrt{9 - 9sin^2t} = 3\\sqrt{cos^2t} = 3|cost| = 3cost $. $I = \\int_{0}^{\\frac{\\pi}{2}} 9sin^2t.3cost. 3costdt = \\frac{81}{4} \\int_{0}^{\\frac{\\pi}{2}} sin^22tdt = \\frac{81}{8} \\int_{0}^{\\frac{\\pi}{2}} (1 - cos4t)dt = \\frac{81}{8} (t - \\frac{sin4t}{4})|_{0}^{\\frac{\\pi}{2}} = \\frac{81 \\pi}{16}$",
+                            "answer": "\\frac{81 \\pi}{16}"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tính tích phân hàm chứa dấu giá trị tuyệt đối ", 
+                    "general guide":"Problem: Evaluate $I = \\int_a^b g(x) dx$ where $g(x)$ is an expression involving absolute values.\n\n$\\bullet$ General Approach:\n  1.  Determine the sign of the expression within the absolute value on $[a,b]$.\n  2.  Use properties of integrals to split the integral over intervals where the sign is consistent.\n  3.  $\\int_a^b [f(x) + g(x)] dx = \\int_a^b f(x) dx + \\int_a^b g(x) dx$ (Linearity of Integrals).\n  4.  Evaluate each resulting integral.\n\n$\\bullet$ Special Case: Evaluate $I = \\int_a^b |f(x)| dx$\n\n  * Method 1:\n    1.  Find the roots of $f(x) = 0$ on $[a,b]$.\n    2.  Determine the sign of $f(x)$ on each subinterval defined by the roots.\n    3.  Use properties of integrals to split the integral based on the sign of $f(x)$.\\par \n\n* Method 2:\n    1.  Find the roots of $f(x) = 0$ on $[a,b]$, say $x_1, x_2, ..., x_n$ (with $x_1 < x_2 < ... < x_n$).\n    2.  Then, $I = \\int_a^{x_1} |f(x)|dx + \\int_{x_1}^{x_2} |f(x)|dx + ... + \\int_{x_n}^b |f(x)|dx$\n  $\\Rightarrow I = |\\int_a^{x_1} f(x)dx| + |\\int_{x_1}^{x_2} f(x)dx| + ... + |\\int_{x_n}^b f(x)dx|$\n\n  3.  Evaluate each integral.",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{2} |x-1| dx$",
+                            "solution": "Khi đó: $I = \\int_{0}^{1} -(x-1) dx + \\int_{1}^{2} (x-1) dx = -(\\frac{x^2}{2} - x)|_{0}^{1} + (\\frac{x^2}{2} - x)|_{1}^{2} = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{\\frac{\\pi}{4}}^{\\frac{3\\pi}{2}} |sin2x| dx$",
+                            "solution": "Khi đó: $I = \\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} sin2x dx - \\int_{\\frac{\\pi}{2}}^{\\frac{3\\pi}{2}} sin2x dx = -\\frac{1}{2} cos2x|_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} + \\frac{1}{2} cos2x|_{\\frac{\\pi}{2}}^{\\frac{3\\pi}{2}} = - \\frac{1}{2} (-1 - 0) + \\frac{1}{2} (0 + 1) = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{2} |x^2 - 3x + 2| dx$",
+                            "solution": "$I = \\int_{0}^{1} (x^2 - 3x + 2) dx - \\int_{1}^{2} (x^2 - 3x + 2) dx = (\\frac{x^3}{3} - \\frac{3x^2}{2} + x)|_{0}^{1} - (\\frac{x^3}{3} - \\frac{3x^2}{2} + x)|_{1}^{2} = \\frac{5}{6} - (-\\frac{1}{6}) = 1$",
+                            "answer": "1"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{-2}^{2} |x + 1| dx$",
+                            "solution": "Do đó $I = \\int_{-2}^{2} |x + 1| dx = -\\int_{-2}^{-1} (x + 1) dx + \\int_{-1}^{2} (x + 1) dx = -(\\frac{x^2}{2} + x)|_{-2}^{-1} + (\\frac{x^2}{2} + x)|_{-1}^{2} = 5$.",
+                            "answer": "5"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Tính tích phân hàm số hữu tỉ",
+                    "general guide":"Problem: Evaluate $I = \\int \\frac{P(x)}{Q(x)} dx$. Given $P(x)$ and $Q(x)$ are polynomials in $x$ of degree $m$ and $n$ respectively.\n\n$\\bullet$ Case 1: $m \\geq n$\n  * Divide $P(x)$ by $Q(x)$ to simplify the integral into more elementary forms.\n\n$\\bullet$ Case 2: $m < n$. Apply the method of undetermined coefficients (partial fraction decomposition).\n\n  1.  Express $Q(x)$ in the form $Q(x) = (ax+b)(cx+d)^i (px^2+qx+r)$ where $px^2+qx+r=0$ has no real roots.\n  2.  Then, $\\frac{P(x)}{Q(x)} = \\frac{A}{ax+b} + \\frac{B}{cx+d} + ... + \\frac{C}{(cx+d)^i} + \\frac{Mx+P}{px^2+qx+r}$ (1)\n  3.  Equate coefficients to find the values of $A, B, C, ..., M, N, P$.\n\n$\\bullet$ Special Cases:\n  (a) If the degree of $P(x)$ is one less than the degree of $Q(x)$ [i.e., $m = n-1$]:\n   *  Try $t = Q(x)$ and find $dt$.\n   *  If $dt = k \\cdot P(x) dx$ for some constant $k$, then use $\\int \\frac{du}{u} = \\ln|u|$.\n   *  If $dt \\neq k \\cdot P(x) dx$, apply the method of undetermined coefficients as described above.\n\n  (b) Integrals of the form $I = \\int \\frac{mx+n}{ax^2+bx+c} dx$:\n   * If $ax^2+bx+c = 0$ has two distinct real roots, apply the method of undetermined coefficients.\n   * If $ax^2+bx+c = 0$ has a repeated real root $x=x_0$, rewrite the integral as $I = \\int \\frac{dx}{a(x-x_0)^2}$ and then substitute $t = x-x_0$.\n   * If $ax^2+bx+c = 0$ has no real roots, use trigonometric substitution.\n\n  (c) Some standard forms:\n   * $\\int \\frac{dx}{ax+b} = \\frac{1}{a} \\ln|ax+b| + C$\n   * $\\int \\frac{dx}{x^2-a^2} = \\frac{1}{2a} (\\ln|\\frac{x-a}{x+a}|) + C$\n   * $\\int \\frac{dx}{x(x+a)} = \\frac{1}{a} (\\ln|\\frac{x}{x+a}|) + C$",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{2x^3 + 7x^2 + 3x - 1}{2x+1} dx$",
+                            "solution": "Thực hiện phép chia đa thức $P(x) = 2x^3 + 7x^2 + 3x - 1$ cho đa thức $Q(x) = 2x + 1$ ta được: $\\frac{2x^3 + 7x^2 + 3x - 1}{2x+1} = x^2 + 3x - \\frac{1}{2x+1}$.\\nKhi đó: $I = \\int_{0}^{1} (x^2 + 3x - \\frac{1}{2x+1}) dx = (\\frac{x^3}{3} + \\frac{3x^2}{2} - \\frac{1}{2} ln|2x+1|)|_{0}^{1} = \\frac{11}{6} - \\frac{1}{2} ln3$.",
+                            "answer": "11/6 - 1/2 ln3"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{1}^{2} \\frac{dx}{x(x+1)^2}$",
+                            "solution": "Ta có: $\\frac{1}{x(x+1)^2} = \\frac{A}{x} + \\frac{B}{x+1} + \\frac{C}{(x+1)^2} \\Rightarrow 1 = A(x+1)^2 + Bx(x+1) + Cx$.\\nCách 1: $(*) \\Rightarrow 1 = (A+B)x^2 + (2A+B+C)x + A$.\\n$\\forall x \\neq {-1; 0}$ ta có hệ sau: $\\begin{cases}A + B = 0 \\ 2A + B + C = 0 \\ A = 1 \\end{cases} \\Rightarrow \\begin{cases}A = 1 \\ B = -1 \\ C = -1 \\end{cases}$.\\nCách 2: Cho $x = 0$: thay vào (*) ta được: $A = 1$. Cho $x = -1$: thay vào (*) ta được: $C = -1$. Với A = 1 và C = -1, ta cho x = 1 $\\Rightarrow B = -1$.\\n$\\Rightarrow \\frac{1}{x(x+1)^2} = \\frac{1}{x} - \\frac{1}{x+1} - \\frac{1}{(x+1)^2}$.\\nVậy $I = \\int_{1}^{2} [\\frac{1}{x} - \\frac{1}{x+1} - \\frac{1}{(x+1)^2}] dx = (ln|x| + \\frac{1}{x+1})|_{1}^{2} = ln\\frac{2}{3} + \\frac{1}{6}$.",
+                            "answer": "ln(2/3) + 1/6"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{3x-1}{4x^2-4x+2} dx$",
+                            "solution": "Ta có: $(4x^2 - 4x + 2)' = 8x - 4$.\\nTa có: $I = \\int_{0}^{1} \\frac{3x-1}{4x^2-4x+2} dx = \\int_{0}^{1} \\frac{\\frac{3}{8}(8x-4) + \\frac{1}{2}}{4x^2-4x+2} dx = \\frac{3}{8} \\int_{0}^{1} \\frac{8x-4}{4x^2-4x+2} dx + \\frac{1}{2} \\int_{0}^{1} \\frac{dx}{4x^2-4x+2}$.\\n+ Xét: $M = \\frac{3}{8} \\int_{0}^{1} \\frac{8x-4}{4x^2-4x+2} dx = \\frac{3}{8} ln|4x^2 - 4x + 2||_{0}^{1} = \\frac{3}{8} (ln2 - ln2) = 0$.\\n+ Xét: $N = \\frac{1}{2} \\int_{0}^{1} \\frac{dx}{4x^2-4x+2} = \\frac{1}{2} \\int_{0}^{1} \\frac{dx}{4(x-\\frac{1}{2})^2 + 1}$.\\nĐặt $2x - 1 = tan t$. Với $t \\in (-\\frac{\\pi}{2}; \\frac{\\pi}{2})$.\\n$\\Rightarrow 2dx = \\frac{dt}{cos^2 t} \\Leftrightarrow dx = \\frac{dt}{2cos^2 t}$.\\nĐổi cận: Với $x = 0 \\Rightarrow x = -\\frac{\\pi}{4}$. Với $x = 1 \\Rightarrow t = \\frac{\\pi}{4}$.\\n$\\Rightarrow N = \\frac{1}{2} \\int_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} \\frac{\\frac{dt}{2cos^2 t}}{tan^2 t + 1} = \\frac{1}{4} \\int_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} dt = \\frac{1}{4} (t)|_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} = \\frac{\\pi}{4}$.",
+                            "answer": "pi/4"
+                        },
+                        {
+                            "question": "Tính tích phân $I = \\int_{0}^{1} \\frac{x^3-3x+2x-1}{x-2} dx$",
+                            "solution": "Tính tích phân $I = \\int_{0}^{1} \\frac{x^3-3x+2x-1}{x-2} dx$\\nTa có $I = \\int_{0}^{1} \\frac{x^3-3x+2x-1}{x-2} dx = \\int_{0}^{1} (x^2 - x - \\frac{1}{x-2}) dx = (\\frac{x^3}{3} - \\frac{x^2}{2} - ln|x-2|)|_{0}^{1} = (\\frac{1}{3} - \\frac{1}{2} - ln|x-2|) - (-ln2) = ln 2 - \\frac{1}{6}$.",
+                            "answer": "ln 2 - 1/6"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Ứng dụng của tích phân: Tính diện tích hình phẳng",
+                    "general guide":"1. Theorem: Given a continuous, non-negative function $y=f(x)$ on $[a,b]$, the area $S$ bounded by the graph of $f(x)$, the x-axis, and the lines $x=a$ and $x=b$ is:\n   $S = \\int_a^b f(x) dx$\n\n2. Related Problems:\n\n   * Problem 1: Area bounded by $y=f(x)$ (continuous on $[a,b]$), the x-axis, $x=a$, and $x=b$:\n    $S = \\int_a^b |f(x)| dx$\n\n   * Problem 2: Area bounded by $y=f(x)$, $y=g(x)$ (continuous on $[a,b]$), $x=a$, and $x=b$:\n    $S = \\int_a^b |f(x) - g(x)| dx$\n\n   * Important Note: If on $[a,b]$, $f(x)$ does not change sign, then $\\int_a^b |f(x)| dx = |\\int_a^b f(x) dx|$\n      $\\Rightarrow$ Master the technique for integrating functions involving absolute values!\n\n   * Problem 3: Area bounded by $x=g(y)$, $x=h(y)$, $y=c$, and $y=d$:\n    $S = \\int_c^d |g(y) - h(y)| dy$\n\n   * Problem 4: Area bounded by two curves $(C_1): f_1(x)$ and $(C_2): f_2(x)$:\n    $S = \\int_{x_i}^{x_n} |f(x) - g(x)| dx$, where $x_i$ and $x_n$ are the smallest roots of the equation $f(x) = g(x)$",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tính diện tích S của hình phẳng giới hạn bởi Parabol (P):y=3-x^2, đường thẳng y=-2x+3, trục tung và x=1.",
+                            "solution": "Phương trình hoành độ giao điểm: $3-x^2=-2x+3 \\Leftrightarrow x^2-2x=0 \\Rightarrow x=0, x=2$.\\nDiện tích cần tìm được tính bằng công thức sau đây:\\n$S = \\int_{0}^{1} |x^2 - 2x| dx + \\int_{1}^{2} |x^2 - 2x| dx = \\int_{0}^{1} (2x - x^2) dx - \\int_{1}^{2} (x^2 - 2x) dx = /frac{4}{3}",
+                            "answer": "4/3"
+                        },
+                        {
+                            "question": "Tính diện tích S của hình phẳng giới hạn bởi các đường y=-2x^2 và y=-2x-4.",
+                            "solution": "Phương trình hoành độ giao điểm của $y=-2x^2$ và $y=-2x-4$ là:\\n$-2x^2=-2x-4 \\Leftrightarrow -2x^2+2x+4=0 \\Rightarrow x=-1, x=2$.\\n$S = \\int_{-1}^{2} |-2x^2 + 2x + 4| dx = \\int_{-1}^{2} (-2x^2 + 2x + 4) dx = (-\\frac{2}{3}x^3 + x^2 + 4x)|_{-1}^{2} = 9$.",
+                            "answer": "9"
+                        },
+                        {
+                            "question": "Tính diện tích S của hình phẳng giới hạn bởi các đường y=x^3-3x và y=x",
+                            "solution": "Ta có phương trình hoành độ giao điểm $x^3-4x = 0 \\Leftrightarrow x = 0; x = 2; x = -2$.\\nDiện tích $S = |\\int_{-2}^{0} (x^3 - 4x) dx| + |\\int_{0}^{2} (x^3 - 4x) dx| = 4 + 4 = 8$.",
+                            "answer": "8"
+                        },
+                        {
+                            "question": "Tính diện tích hình phẳng được giới hạn bởi các đường y=2x-x^2 và đường thẳng x+y=2",
+                            "solution": "Phương trình hoành độ giao điểm của đồ thị hàm số y=x^2+x-1 và y=x^4+x-1 là \\n$x^2+x-1=x^4+x-1 \\Leftrightarrow x^2(x^2-1)=0 \\Rightarrow x=0; x=\\pm1$.\\nTa có: $x^2 (x^2-1) \\le 0 \\forall x \\in [-1; 1]$. Do đó:\\n$S = \\int_{-1}^{1} |x^4 - x^2| dx = -\\int_{-1}^{1} (x^4 - x^2) dx = \\frac{4}{15}$.",
+                            "answer": "4/15"
+                        },
+                        {
+                            "question": "Tính diện tích S của hình phẳng giới hạn bởi các đường x^3-x và y=x-x^2.",
+                            "solution": "Phương trình hoành độ giao điểm:\\n$x^3-x=-x^2+x \\Leftrightarrow x = 0; x = -2; x = 1$\\n$S = \\int_{-2}^{0} |x^3 + x^2 - 2x| dx + \\int_{0}^{1} |x^3 + x^2 - 2x| dx = \\frac{37}{12}$.",
+                            "answer": "37/12"
+                        },
+                        {
+                            "question": "Tính diện tích tích hình phẳng giới hạn bởi các đường y=cosx; Ox; Oy; x=pi",
+                            "solution": "Phương trình hoành độ giao điểm của đồ thị hàm số y=cosx và trục Ox (y=0) là:\\n$cosx=0 \\Rightarrow x=\\pi/2 + k\\pi (k \\in Z)$.\\nXét trên $[0;\\pi]$ nên $x=\\pi/2$.\\nDo đó\\n$S = \\int_{0}^{\\pi} |cosx| dx = \\int_{0}^{\\frac{\\pi}{2}} |cosx| dx + \\int_{\\frac{\\pi}{2}}^{\\pi} |cosx| dx = |\\int_{0}^{\\frac{\\pi}{2}} (cosx) dx| + |\\int_{\\frac{\\pi}{2}}^{\\pi} (cosx) dx| = 2$.",
+                            "answer": "2"
+                        },
+                        {
+                            "question": "Tính Diện tích hình phẳng giới hạn bởi các đường y=e^x; y=1 và x=1",
+                            "solution": "Phương trình hoành độ giao điểm của hai đồ thị hàm số y=e^x và trục y=1 là:\\n$e^x=1 \\Rightarrow x=0$.\\nDo đó: $S = \\int_{0}^{1} |e^x - 1| dx = |\\int_{0}^{1} (e^x - 1) dx| = e - 2$.",
+                            "answer": "e-2"
+                        },
+                        {
+                            "question": "Tính diện tích tích hình phẳng được giới hạn bởi các đường y=(e+1)x ,y=(1+e^x) x",
+                            "solution": "Phương trình hoành độ giao điểm của hai đồ thị hàm số y=(e+1)x và y=(1+e^x)x:\\n$(e+1)x = (1+e^x)x \\Rightarrow x=0, x=1$.\\nDo đó: $S = \\int_{0}^{1} |(e+1)x - (1+e^x)x| dx = |\\int_{0}^{1} ((e+1)x - (1+e^x)x) dx| = \\frac{e}{2} - 1$.",
+                            "answer": "\\frac{e}{2} - 1"
+                        },
+                        {
+                            "question": "Tính diện tích tích hình phẳng được giới hạn bởi các đường y=sin2x,y=cosx và hai đường thẳng x=0, x=pi/2",
+                            "solution": "Phương trình hoành độ giao điểm của hai đồ thị hàm số y=sin2x và y=cosx là:\\n$sin2x=cosx \\Rightarrow cosx.(2sinx-1)=0$.\\n$\\Rightarrow x=\\pi/2 + k\\pi, x=\\frac{\\pi}{6} + k2\\pi, x=\\frac{5\\pi}{6} + k2\\pi$.\\nXét trên $[0;\\pi/2]$ nên nhận $x=\\pi/6$\\nDo đó: $S = \\int_{0}^{\\frac{\\pi}{2}} |sin2x - cosx| dx = \\int_{0}^{\\frac{\\pi}{6}} (sin2x - cosx) dx + \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} (sin2x - cosx) dx = 1/2$.",
+                            "answer": "1/2"
+                        }
+                    ]
+                },
+                {
+                    "topic":"Ứng dụng của tích phân: Tính thể tích khối tròn xoay",
+                    "general guide":"",
+                    "questions": 
+                    [
+                        {
+                            "question": "Tính thể tích khối tròn xoay sinh ra do quay hình phẳng giới hạn bởi các đường y=x^3, trục Ox, x=-1, x=1 một vòng quanh trục Ox.",
+                            "solution": "Thể tích khối tròn xoay được giới hạn bởi các đường y=x^3, trục Ox, x=-1, x=1 một vòng quanh trục Ox là:\\n$V = \\pi \\int_{-1}^{1} (x^3)^2 dx = \\pi \\int_{-1}^{1} x^6 dx = \\pi \\frac{x^7}{7}|_{-1}^{1} = \\frac{2}{7}\\pi$.",
+                            "answer": "2/7pi"
+                        },
+                        {
+                            "question": "Gọi (H) là hình phẳng giới hạn bởi các đường y=2x-x^2; Ox. Quay (H) xung quanh trục Ox ta được khối tròn xoay. Tính thể tích của (H)",
+                            "solution": "Phương trình hoành độ giao điểm:\\n$2x-x^2 = 0 \\Leftrightarrow x=0; x=2$\\nSuy ra\\n$V = \\pi \\int_{0}^{2} (2x-x^2)^2 dx = \\pi \\int_{0}^{2} (4x^2 - 4x^3 + x^4) dx = \\pi (\\frac{4x^3}{3} - \\frac{4x^4}{4} + \\frac{x^5}{5})|_{0}^{2} = \\frac{16}{15}\\pi$.",
+                            "answer": "16/15pi"
+                        },
+                        {
+                            "question": "Tính thể tích khối tròn xoay được giới hạn bởi các đường y=(1-x^2), y=0, x=0 và x=2 khi quay quanh trục Ox.",
+                            "solution": "Thể tích khối tròn xoay được giới hạn bởi các đường\\ny=(1-x^2), y=0, x=0 và x=2 khi quay quanh trục Ox là:\\n$V = \\pi \\int_{0}^{2} (1-x^2)^2 dx = \\pi \\int_{0}^{2} (1 - 2x^2 + x^4) dx = \\pi (x - \\frac{2x^3}{3} + \\frac{x^5}{5})|_{0}^{2} = \\frac{46}{15}\\pi$.",
+                            "answer": "46/15pi"
+                        },
+                        {
+                            "question": "Cho hình phẳng giới hạn bởi các đường y=\\sqrt{x}; y=x quay quanh trục Ox. Tính thể tích khối tròn xoay tạo.",
+                            "solution": "Giải phương trình $\\sqrt{x} = x \\Leftrightarrow x = x \\in {0,1}$.\\nThể tích khối tròn xoay giới hạn bởi các đường y=\\sqrt{x}; y=x khi quay quanh trục Ox là\\n$V = \\pi \\int_{0}^{1} ((\\sqrt{x})^2 - x^2) dx = \\pi \\int_{0}^{1} (x - x^2) dx = \\frac{\\pi}{6}$.",
+                            "answer": "pi/6"
+                        },
+                        {
+                            "question": "Gọi (H) là hình phẳng giới hạn bởi các đường y=tanx; Ox; x=0; x=π/4. Quay (H) xung quanh trục Ox ta được khối tròn xoay có thể tích bằng bao nhiêu?",
+                            "solution": "Thể tích khối tròn xoay được giới hạn bởi các đường y=tanx; Ox; x=0; x=\\pi/4 là:\\n$V = \\pi \\int_{0}^{\\frac{\\pi}{4}} (tan x)^2 dx = \\pi \\int_{0}^{\\frac{\\pi}{4}} tan^2 x dx = \\pi \\int_{0}^{\\frac{\\pi}{4}} (tan^2 x + 1) dx - \\pi \\int_{0}^{\\frac{\\pi}{4}} dx = \\pi tanx|_{0}^{\\frac{\\pi}{4}} - \\pi x|_{0}^{\\frac{\\pi}{4}} = \\pi - \\frac{\\pi^2}{4}$.",
+                            "answer": "pi - pi^2/4"
+                        },
+                        {
+                            "question": "Tính thể tích khối tròn xoay giới hạn bởi y=lnx,y=0,x=e quay trục quanh trục Ox.",
+                            "solution": "Phương trình hoành độ giao điểm: $lnx=0 \\Leftrightarrow x=1$\\nKhi đó thể tích cần tìm là:\\n$V = \\pi \\int_{1}^{e} (lnx)^2 dx = \\pi \\int_{1}^{e} ln^2xdx = \\pi (e - 2)$",
+                            "answer": "pi(e-2)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
