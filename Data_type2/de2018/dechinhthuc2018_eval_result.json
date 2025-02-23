@@ -1,0 +1,11 @@
+{
+    "ai_gemini_flash": 83.0,
+    "ai_gpt_4o_mini": 46.0,
+    "ai_gpt_4o": 58.0,
+    "ai_llama70b": 51.14,
+    "ai_llama_8B": 25.0,
+    "ai_deepseek_v3": 71.59,
+    "ai_qwen_2.5_72b": 76.14,
+    "ai_qwen_2.5_7b": 52.27,
+    "ai_gemma27b": 52.27
+}
